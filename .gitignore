@@ -1,0 +1,11 @@
+# Brondata
+boekentips_data.xlsx
+*.xlsx
+
+# Python
+*.pyc
+__pycache__/
+
+# OS bestanden
+.DS_Store
+Thumbs.db

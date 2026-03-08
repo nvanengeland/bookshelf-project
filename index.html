@@ -15,13 +15,12 @@
             <p class="subtitle">van leerlingen, voor leerlingen</p>
         </div>
 
-        <nav class="grade-tabs">
-            <button class="tab active" data-grade="graad_1">1ste Graad</button>
-            <button class="tab" data-grade="graad_2">2de Graad</button>
-            <button class="tab" data-grade="graad_3">3de Graad</button>
-        </nav>
-
         <div class="filters">
+            <select id="grade-select">
+                <option value="graad_1">1ste Graad</option>
+                <option value="graad_2">2de Graad</option>
+                <option value="graad_3">3de Graad</option>
+            </select>
             <input type="text" id="search" placeholder="Zoek op titel of auteur..." autocomplete="off">
             <select id="genre-filter">
                 <option value="">Alle genres</option>
@@ -55,19 +54,20 @@
             <div class="modal-content">
                 <div class="modal-cover">
                     <img id="modal-cover-img" src="" alt="Cover">
-                </div>
-                <div class="modal-info">
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-author" id="modal-author"></p>
                     <div class="modal-meta">
                         <span class="meta-item" id="modal-pages"></span>
                         <span class="meta-item" id="modal-year"></span>
                         <span class="meta-item" id="modal-language"></span>
                     </div>
                     <div class="modal-genre" id="modal-genre"></div>
-                    <p class="modal-synopsis" id="modal-synopsis"></p>
                     <p class="modal-publisher" id="modal-publisher"></p>
                     <p class="modal-isbn" id="modal-isbn"></p>
+                    <a class="modal-publisher-link" id="modal-publisher-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none">Bekijk bij uitgever</a>
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-author" id="modal-author"></p>
+                    <p class="modal-synopsis" id="modal-synopsis"></p>
                 </div>
             </div>
         </div>

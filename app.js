@@ -187,6 +187,14 @@
         document.getElementById('modal-publisher').textContent = book.publisher ? `Uitgever: ${book.publisher}` : '';
         document.getElementById('modal-isbn').textContent = book.isbn ? `ISBN: ${book.isbn}` : '';
 
+        const pubLink = document.getElementById('modal-publisher-link');
+        if (book.publisher_url) {
+            pubLink.href = book.publisher_url;
+            pubLink.style.display = 'inline-block';
+        } else {
+            pubLink.style.display = 'none';
+        }
+
         overlay.classList.add('active');
         document.body.style.overflow = 'hidden';
     }
@@ -241,16 +249,12 @@
         renderBookshelf();
         initTheme();
 
-        // Tab switching
-        document.querySelectorAll('.tab').forEach(tab => {
-            tab.addEventListener('click', () => {
-                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
-                tab.classList.add('active');
-                currentGrade = tab.dataset.grade;
-                document.getElementById('search').value = '';
-                populateFilters();
-                renderBookshelf();
-            });
+        // Grade dropdown
+        document.getElementById('grade-select').addEventListener('change', (e) => {
+            currentGrade = e.target.value;
+            document.getElementById('search').value = '';
+            populateFilters();
+            renderBookshelf();
         });
 
         // Filters

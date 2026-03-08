@@ -3,7 +3,7 @@ const GRAAD_1_DATA = [
     "title": "Binding 13",
     "author": "Chloe Walsh",
     "isbn": "9780349439259",
-    "cover_front": "https://covers.openlibrary.org/b/id/14590229-L.jpg",
+    "cover_front": "covers/binding_13.jpg",
     "cover_back": null,
     "synopsis": "Binding 13 is het eerste deel van de internationale bestsellerreeks The Boys of Tommen. Het verhaal volgt twee tieners wier levens samenkomen op Tommen College in Ierland. Shannon Lynch, een vijftienjarig meisje dat gepest is op haar vorige school, arriveert halverwege het schooljaar op zoek naar een nieuwe start, wanhopig proberend de demonen die haar achtervolgen van zich af te schudden. Johnny Kavanagh is een zeventienjarige rugbyster met een veelbelovende carrière, maar hij worstelt in stilte met een pijnlijke blessure die alles kan veranderen. Ondanks Johnny's vastberadenheid om afleiding te vermijden, raakt hij steeds meer betrokken bij het beschermen van het mysterieuze, teruggetrokken meisje met de droevige ogen. Hun band evolueert van een toevallige ontmoeting tot een gecompliceerde vriendschap en onmiskenbare chemie, terwijl Shannon opnieuw het doelwit wordt van pestkoppen. Vriendschap, eerste liefde, opkomende roem, huiveringwekkende geheimen en pijn komen samen in dit emotionele en verslavende verhaal.",
     "pages": 646,
@@ -11,13 +11,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2018,
     "original_language": "Engels",
-    "publisher": "Piatkus"
+    "publisher": "Piatkus",
+    "publisher_url": "https://www.littlebrown.co.uk/titles/chloe-walsh/binding-13-chloe-walsh/9780349439259/"
   },
   {
     "title": "Little Women",
     "author": "Louisa May Alcott",
     "isbn": "9781544107325",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9781544107325-L.jpg",
+    "cover_front": "covers/little_women.jpg",
     "cover_back": null,
     "synopsis": "Little Women is een semi-autobiografische roman uit 1868 die het leven volgt van vier zussen — Meg, Jo, Beth en Amy March — terwijl ze opgroeien in New England tijdens de Amerikaanse Burgeroorlog. Jo is een wildebras en aspirant-schrijfster, Meg de oudste en traditioneel ingestelde zus, Beth een verlegen muzikaal talent, en Amy de artistieke en elegante jongste. Verenigd door hun toewijding aan elkaar en geleid door hun moeder Marmee, navigeren de zussen door liefde, verlies, armoede en persoonlijke ambitie, terwijl hun vader als aalmoezenier in de oorlog dient. De roman verkent tijdloze thema's als liefde en dood, oorlog en vrede, het conflict tussen persoonlijke ambitie en familiale verantwoordelijkheden, en de botsing der culturen. Het werk weerspiegelt Alcotts transcendentalistische opvoeding, met nadruk op eenvoudig leven, hard werken en moreel karakter boven materiële rijkdom.",
     "pages": 396,
@@ -25,13 +26,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2017,
     "original_language": "Engels",
-    "publisher": "Roberts Brothers"
+    "publisher": "Roberts Brothers",
+    "publisher_url": "https://www.penguinrandomhouse.com/books/292496/little-women-by-louisa-may-alcott/"
   },
   {
     "title": "The Perks of Being a Wallflower",
     "author": "Stephen Chbosky",
     "isbn": "9781847394071",
-    "cover_front": "https://covers.openlibrary.org/b/id/14315052-L.jpg",
+    "cover_front": "covers/the_perks_of_being_a_wallflower.jpg",
     "cover_back": null,
     "synopsis": "The Perks of Being a Wallflower is een coming-of-age roman verteld via brieven geschreven door Charlie, een vijftienjarige eerstejaars, aan een anonieme ontvanger. Het verhaal volgt Charlie terwijl hij zijn eerste jaar op de middelbare school doorloopt na het meemaken van een significant persoonlijk trauma. Wanneer hij bevriend raakt met twee ouderejaars, Sam en Patrick, begint Charlie uit zijn geïsoleerde bestaan te komen en meer deel te nemen aan het leven. Via hun vriendschap maakt hij kennis met nieuwe ervaringen, waaronder literatuur, muziek, feestjes en sociale relaties. Charlie worstelt met serieuze onderwerpen als zelfmoord, familiedisfunctie, seksueel trauma en geestelijke gezondheidsproblemen, maar het verhaal benadrukt hoe betekenisvolle vriendschappen en ondersteunende volwassenen hem helpen verbinding en een doel te vinden.",
     "pages": 231,
@@ -39,13 +41,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 1999,
     "original_language": "Engels",
-    "publisher": "Gallery Books"
+    "publisher": "Gallery Books",
+    "publisher_url": "https://www.simonandschuster.com/books/The-Perks-of-Being-a-Wallflower/Stephen-Chbosky/9781665982412"
   },
   {
     "title": "Iene miene mutte",
     "author": "M.J. Arlidge",
     "isbn": "9789022576229",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9789022576229-L.jpg",
+    "cover_front": "covers/iene_miene_mutte.jpg",
     "cover_back": null,
     "synopsis": "Het meisje was amper nog in leven toen ze het bos uit kwam lopen. Het verhaal van haar ontvoering was donkerder dan de meest verschrikkelijke nachtmerrie. Dagen later wordt een tweede getraumatiseerd slachtoffer gevonden, en een patroon onthult zich: mensen worden in paren ontvoerd, vastgehouden en uitgehongerd, en vervolgens geconfronteerd met een duivels dilemma — dood of gedood worden. Inspecteur Helen Grace en haar team jagen op een ingenieuze psychopaat die zijn slachtoffers gebroken en vol schuldgevoel achterlaat. De slachtoffers dienen als zowel zijn visitekaartje als de moordenaars zelf — ogenschijnlijk willekeurig gekozen, terwijl de plaatsen delict zorgvuldig zijn gepland. Er moet iets zijn dat alle slachtoffers met elkaar verbindt. Dit is het eerste deel in M.J. Arlidges Helen Grace-thrillerserie.",
     "pages": 432,
@@ -53,13 +56,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2016,
     "original_language": "Engels",
-    "publisher": "A.W. Bruna"
+    "publisher": "A.W. Bruna",
+    "publisher_url": "https://www.boekerij.nl/producten/iene-miene-mutte-9789022576229"
   },
   {
     "title": "Girl in Pieces",
     "author": "Kathleen Glasgow",
     "isbn": "9782380821314",
-    "cover_front": "https://covers.openlibrary.org/b/id/8888850-L.jpg",
+    "cover_front": "covers/girl_in_pieces.jpg",
     "cover_back": null,
     "synopsis": "Girl in Pieces vertelt het verhaal van de zeventienjarige Charlotte Davis, die worstelt met zelfverwonding en de verwoestende gevolgen van trauma. Charlie heeft al meer verloren dan de meeste mensen in een heel leven: de dood van haar vader, het verdwijnen van haar beste vriendin, het in de steek gelaten worden door haar moeder, en tijd op straat. Het boek begint wanneer Charlie herstelt in een psychiatrische instelling na een zelfmoordpoging. Na haar ontslag verhuist ze naar Arizona om bij een vriendin te wonen en probeert ze haar leven weer op te bouwen met een afwasbaan. Ze raakt verstrikt in een gecompliceerde relatie met Riley, een oudere man die met zijn eigen demonen vecht, wat haar fragiele herstel op de proef stelt. Het verhaal verkent Charlie's weg naar genezing via kunst en menselijke verbinding, en portretteert herstel op authentieke wijze als non-lineair en voortdurend.",
     "pages": 416,
@@ -67,13 +71,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2000,
     "original_language": "Engels",
-    "publisher": "Delacorte Press"
+    "publisher": "Delacorte Press",
+    "publisher_url": "https://www.penguinrandomhouse.com/books/530119/girl-in-pieces-by-kathleen-glasgow/"
   },
   {
     "title": "Juniper",
     "author": "Monica Furlong",
     "isbn": "9780394841960",
-    "cover_front": "https://covers.openlibrary.org/b/id/422306-L.jpg",
+    "cover_front": "covers/juniper.jpg",
     "cover_back": null,
     "synopsis": "Juniper is een fantasyroman en de prequel van Monica Furlongs Wise Child. Het verhaal volgt de jonge prinses Ninnoc, dochter van Koning Mark van Cornwall, die opgroeit in luxe en privileges. Ze wordt weggestuurd om 'een jaar en een dag' te leven bij Euny, een wijze vrouw en magische beoefenaarster. Tijdens deze transformatieve periode ondergaat ze een spirituele inwijding om een 'doran' te worden — een soort kruidenvrouw of aardeheks. De opleiding benadrukt de verbinding met de natuur via het verzamelen van kruiden, observatie en mystieke praktijken. Wanneer ze terugkeert naar huis, ontdekt Ninnoc (nu Juniper genaamd) dat haar koninkrijk bedreigd wordt door een kwaadaardige tovenares. Ze moet haar pas verworven magische vaardigheden en wijsheid inzetten om haar familie en land te beschermen.",
     "pages": 198,
@@ -81,13 +86,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 1991,
     "original_language": "Engels",
-    "publisher": "Random House"
+    "publisher": "Random House",
+    "publisher_url": "https://www.goodreads.com/book/show/248584.Juniper"
   },
   {
     "title": "De heksen",
     "author": "Roald Dahl",
     "isbn": "9780141365473",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9780141365473-L.jpg",
+    "cover_front": "covers/de_heksen.jpg",
     "cover_back": null,
     "synopsis": "Échte heksen hebben geen rare zwarte puntmutsen en bezemstelen. Ze hebben gewone kleren aan en zien er net zo uit als gewone vrouwen. Ze wonen in gewone huizen en hebben gewone banen. Maar onder leiding van de allergruwelijkste Opperheks smeden ze snode plannen om kinderen te laten verdwijnen! Het verhaal volgt een jongen die van zijn geliefde grootmoeder leert hoe je echte heksen kunt herkennen. Maar wanneer hij deze wezens zelf ontmoet, wordt hij in een muis veranderd. Hij moet dan al zijn slimheid en moed gebruiken om hun duistere plannen te dwarsbomen en de kinderen van de wereld te redden. Het verhaal speelt zich af in Noorwegen en in een hotel in Engeland, met een van de liefste grootmoeders waar je ooit over hebt gelezen en de walgelijkste, meest monsterlijke groep 'dames' die je je maar voor kunt stellen.",
     "pages": 208,
@@ -95,13 +101,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 1983,
     "original_language": "Engels",
-    "publisher": "De Fontein"
+    "publisher": "De Fontein",
+    "publisher_url": "https://www.uitgeverijdefontein.nl/boek/de-heksen/"
   },
   {
     "title": "Het Pumpkin Spice Café",
     "author": "Laurie Gilmore",
     "isbn": "9789021038612",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9789021038612-L.jpg",
+    "cover_front": "covers/het_pumpkin_spice_cafe.jpg",
     "cover_back": null,
     "synopsis": "Wanneer Jeanie het geliefde Pumpkin Spice Café in Dream Harbor van haar tante kan overnemen, grijpt ze deze kans met beide handen aan. Het wordt tijd voor een nieuwe start, weg van haar saaie kantoorbaan in Boston. Jeanies aankomst in het stadje blijft niet onopgemerkt. Logan, een knappe lokale boer, probeert de irritant vrolijke nieuwe café-eigenares zoveel mogelijk te ontwijken, vooral wanneer hij beseft dat hij steeds meer tot haar aangetrokken wordt. Zijn hart werd eerder publiekelijk gebroken, dus verliefd worden staat absoluut niet op de agenda. De vraag is of Jeanie het hart van de knorrige Logan kan winnen met haar vrolijkheid, of dat ze de enige persoon heeft gevonden die niet voor haar charme valt. Dit is het eerste deel van de Dream Harbor-reeks van bestsellerauteur Laurie Gilmore, winnaar van de TikTok Book Shop of the Year-award.",
     "pages": 320,
@@ -109,13 +116,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2023,
     "original_language": "Nederlands",
-    "publisher": "Zwijsen"
+    "publisher": "Zwijsen",
+    "publisher_url": "https://www.harpercollins.nl/9789402716290/het-pumpkin-spice-cafe-dream-harbor-1/"
   },
   {
     "title": "It Girl: Team Awkward",
     "author": "Katy Birchall",
     "isbn": "9781481463645",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9781481463645-L.jpg",
+    "cover_front": "covers/it_girl_team_awkward.jpg",
     "cover_back": null,
     "synopsis": "Team Awkward is het hilarische tweede deel in de It Girl-trilogie van Katy Birchall. Anna Huntley worstelt met onverwachte bekendheid na de verloving van haar vader met een beroemde actrice. De media bekritiseren haar omdat ze beroemd is zonder iets noemenswaardigs te hebben bereikt. Vastbesloten om haar waarde te bewijzen en de publieke perceptie te veranderen, meldt Anna zich als aanvoerder van haar schoolteam voor de sportdag — ondanks haar minimale atletische vaardigheden. Het verhaal balanceert Anna's pogingen om haar talent te vinden met romantische complicaties, wanneer een nieuw meisje op school de aandacht trekt van Connor, Anna's crush, door hun gedeelde passie voor kunst. Ondertussen navigeren haar vader en zijn verloofde Helena door hun eigen chaos, inclusief uitgebreide trouwplannen.",
     "pages": 320,
@@ -123,13 +131,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2018,
     "original_language": "Engels",
-    "publisher": "Egmont"
+    "publisher": "Egmont",
+    "publisher_url": "https://harpercollins.co.uk/products/the-it-girl-team-awkward-katy-birchall"
   },
   {
     "title": "FunJungle: Gekidnapt!",
     "author": "Stuart Gibbs",
     "isbn": "9781442467774",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9781442467774-L.jpg",
+    "cover_front": "covers/funjungle_gekidnapt.jpg",
     "cover_back": null,
     "synopsis": "Theodoor Fitzroy is terug voor een nieuw mysterie bij FunJungle, een hypermoderne dierentuin en themapark. Pestkop Vincent Beuk dwingt Theo mee te doen aan een grap die dramatisch misgaat. Wanneer Theo zich verbergt in het koalaverblijf totdat de chaos voorbij is, verdwijnt de koala — en Theo is de enige persoon die op camera is vastgelegd bij het verblijf. Als Theo niet kan bewijzen dat hij niet de koala-kidnapper is, kan hij naar de gevangenis moeten. Met alleen camerabeelden tegen hem moet Theo de echte dader zien te vinden. Het boek combineert detectivewerk, humor en fascinerende dierenweetjes in een spannend verhaal. Dit is het tweede deel van de FunJungle-reeks.",
     "pages": 336,
@@ -137,13 +146,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2014,
     "original_language": "Engels",
-    "publisher": "Simon & Schuster"
+    "publisher": "Simon & Schuster",
+    "publisher_url": "https://www.simonandschuster.com/books/Poached/Stuart-Gibbs/FunJungle/9781442467781"
   },
   {
     "title": "Percy Jackson en de Olympiërs: De bliksemschicht dief",
     "author": "Rick Riordan",
     "isbn": "9780786838653",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9780786838653-L.jpg",
+    "cover_front": "covers/percy_jackson_en_de_olympiers_de_bliksemschicht_dief.jpg",
     "cover_back": null,
     "synopsis": "Percy Jackson ontdekt dat hij de zoon is van Poseidon en wordt beschuldigd van het stelen van Zeus' bliksemschicht. Een episch avontuur door de wereld van de Griekse mythologie.",
     "pages": 384,
@@ -151,13 +161,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2005,
     "original_language": "Engels",
-    "publisher": "Uitgeverij Kluitman"
+    "publisher": "Uitgeverij Kluitman",
+    "publisher_url": "https://www.goodreads.com/book/show/6935607"
   },
   {
     "title": "De magische apotheek",
     "author": "Anna Ruhe",
     "isbn": "9789000374250",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9789000374250-L.jpg",
+    "cover_front": "covers/de_magische_apotheek.jpg",
     "cover_back": null,
     "synopsis": "Wanneer Lucie vreemde geuren opmerkt in haar oude villa die uit het niets lijken te komen, vindt ze een sleutel die op geen enkel slot past. Samen met haar jongere broer Benno en hun buurjongen Mats verkent ze de villa. Ze ontdekken een geheime kamer en kunnen hun ogen niet geloven: de muren hangen van vloer tot plafond vol met planken, en op die planken staan duizenden flesjes waarin de heerlijkste parfums borrelen en glinsteren! Maar al snel komen ze erachter dat achter het glas niet alleen de lekkerste geuren schuilgaan, maar ook talloze gevaren. Eén flesje in het bijzonder mag nooit geopend worden. Dit is het eerste deel van een magische avonturenreeks voor lezers vanaf 9 jaar, vol spanning en bijzondere personages.",
     "pages": 256,
@@ -165,13 +176,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2020,
     "original_language": "Duits",
-    "publisher": "Arena Verlag"
+    "publisher": "Arena Verlag",
+    "publisher_url": "https://www.unieboekspectrum.nl/boek/9789000368020/De-magische-apotheek-3/"
   },
   {
     "title": "De trein van vier over twaalf",
     "author": "Conny Palmkvist",
     "isbn": "9789025879686",
-    "cover_front": "https://covers.openlibrary.org/b/id/9040427-L.jpg",
+    "cover_front": "covers/de_trein_van_vier_over_twaalf.jpg",
     "cover_back": null,
     "synopsis": "De twaalfjarige Nicolaus staat voor een ondraaglijke situatie: zijn moeder ligt op sterven in een ziekenhuisbed. Op een moment van wanhoop ontdekt hij een mysterieuze liftknop die hem transporteert naar 'het Laatste Station' — een plek buiten de tijd zelf. Hier is de tijd bevroren op precies twee minuten voor het overlijden van zijn moeder. Nicolaus ontdekt dat hij een buitengewone gave bezit: hij kan door de tijd reizen met een speciale trein. Dit geschenk confronteert hem met diepgaande vragen: kan hij zijn spijt uit het verleden ongedaan maken? Kan hij zijn moeder waarschuwen? Kan hij de toekomst helemaal veranderen? Een prachtig, aangrijpend verhaal over het verliezen van een ouder, met een donkere maar magische rand. Het boek behandelt de pijnlijke realiteit op een toegankelijke manier, geschreven vanuit het perspectief van een twaalfjarige.",
     "pages": 224,
@@ -179,13 +191,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2003,
     "original_language": "Frans",
-    "publisher": "L'école des loisirs"
+    "publisher": "L'école des loisirs",
+    "publisher_url": "https://www.kluitman.nl/boeken/de-trein-van-vier-over-twaalf/"
   },
   {
     "title": "Warrior Cats: De wildernis in",
     "author": "Erin Hunter",
     "isbn": "9780007217878",
-    "cover_front": "https://covers.openlibrary.org/b/id/12720669-L.jpg",
+    "cover_front": "covers/warrior_cats_de_wildernis_in.jpg",
     "cover_back": null,
     "synopsis": "Al eeuwenlang delen vier wilde kattenclans het woud, volgens de regels die door hun voorouders zijn vastgesteld. Maar de DonderClan wordt bedreigd wanneer de SchaduwClan deze tradities verlaat en het hele bos probeert te overheersen. Krijgers sterven onder mysterieuze omstandigheden. Rufus, een huiskat die droomt van het leven in het wild, verlaat zijn comfortabele thuis om zich bij de DonderClan aan te sluiten, waar hij leert jagen, vechten en leven volgens de krijgerscode. Hij krijgt de naam Vuurpoot. De medicijnkat van de clan deelt een profetie: 'Alleen vuur kan de Clan redden.' Rufus moet ontdekken wat deze voorspelling betekent, terwijl hij zichzelf moet bewijzen tussen de wilde katten en de dreiging van verraad binnen de clan het hoofd moet bieden.",
     "pages": 291,
@@ -193,13 +206,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2003,
     "original_language": "Engels",
-    "publisher": "Baeckens Books"
+    "publisher": "Baeckens Books",
+    "publisher_url": "https://warriorcats.com/books/into-the-wild"
   },
   {
     "title": "1991",
     "author": "Tom Rijpert",
     "isbn": "9789463931816",
-    "cover_front": null,
+    "cover_front": "covers/1991.jpg",
     "cover_back": null,
     "synopsis": "In de zomer van 1991 verdwijnt een jongen van een zomerkamp op Terschelling. Na weken zoeken vervaagt de hoop door de jaren heen dat hij ooit gevonden zal worden. Elf jaar later, in de zomer van 2002, wordt Basha Berkel naar datzelfde kamp gestuurd. In de bus hoort ze gefluister over de verdwenen jongen, rond het kampvuur beginnen spookverhalen, en boven haar stapelbed ontdekt Basha mysterieuze tekens die in het hout zijn gekrast. 19|91 is een meeslepend mysterie over twee zomerkampen met elf jaar ertussen, over verlangen naar het verleden, de wens om het heden te bevriezen en angst voor de toekomst. Dit boek won de MAX Gouden Junior Vleermuis als meest spannende kinderboek van 2025. (Let op: dit boek is geschreven door Tom Rijpert, niet door Aske Mortier.)",
     "pages": 280,
@@ -207,13 +221,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2021,
     "original_language": "Nederlands",
-    "publisher": "Lannoo"
+    "publisher": "Lannoo",
+    "publisher_url": "https://www.pelckmansuitgevers.be/1991.html"
   },
   {
     "title": "Echo uit de diepte",
     "author": "Pam Muñoz Ryan",
     "isbn": "9780439874021",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9780439874021-L.jpg",
+    "cover_front": "covers/echo_uit_de_diepte.jpg",
     "cover_back": null,
     "synopsis": "Echo is een rijkverbeelde roman die historische fictie verweeft met magisch realisme. Het verhaal opent in een sprookjesachtige setting waar een verdwaalde jongen genaamd Otto drie mysterieuze zusters ontmoet in een verboden bos. Zij presenteren hem een betoverde mondharmonica en een profetie, waarmee gebeurtenissen in gang worden gezet die decennialang zullen nazinderen. Het verhaal ontvouwt zich via drie met elkaar verweven verhaallijnen in de jaren 1930-1940: Friedrich in Duitsland navigeert door de opkomst van Nazi-Duitsland, Mike in Pennsylvania beschermt als elfjarige wees zijn jongere broer tijdens de Grote Depressie, en Ivy in Californië wordt geconfronteerd met rassendiscriminatie terwijl ze haar familie bij elkaar probeert te houden. Door elk verhaal verschijnt dezelfde magische mondharmonica als bron van hoop en kracht in donkere tijden. De roman verkent de kracht van muziek om schoonheid te inspireren in een wereld overspoeld door angst en intolerantie.",
     "pages": 528,
@@ -221,13 +236,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Engels",
-    "publisher": "Scholastic"
+    "publisher": "Scholastic",
+    "publisher_url": "https://www.scholastic.com/book/echo/"
   },
   {
     "title": "Films die nergens draaien",
     "author": "Yorick Goldewijk",
     "isbn": "9789059084629",
-    "cover_front": null,
+    "cover_front": "covers/films_die_nergens_draaien.jpg",
     "cover_back": null,
     "synopsis": "Cato is een tiener wier moeder haar in de steek liet op de dag dat ze geboren werd. Haar vader is er fysiek wel, maar staart altijd in het niets en is nooit over de dood van zijn vrouw heen gekomen. Cato en hij hebben nooit een echt gesprek. Wanneer Cato een mysterieus visitekaartje ontdekt van een verlaten bioscoop die op geheimzinnige wijze weer is geopend, besluit ze te gaan kijken. In de bioscoop ontmoet ze de enigmatische mevrouw Kano en ontdekt ze dat dit geen gewone filmzaal is. De films die hier draaien zijn uniek — ze draaien nergens anders en transporteren kijkers naar echte herinneringen en gebeurtenissen uit het verleden. Wanneer Cato een verband ontdekt tussen de bioscoop en het verleden van haar moeder, begint ze aan een gevaarlijke reis door tijd en herinneringen. Uiteindelijk staat Cato voor een keuze die haar leven en de relatie met haar vader fundamenteel zal veranderen. Dit boek won de prestigieuze Gouden Griffel. (Let op: dit boek is geschreven door Yorick Goldewijk, niet door Dirk Bracke.)",
     "pages": 176,
@@ -235,13 +251,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2011,
     "original_language": "Nederlands",
-    "publisher": "Querido"
+    "publisher": "Querido",
+    "publisher_url": "https://www.ploegsma.nl/boek/films-die-nergens-draaien/"
   },
   {
     "title": "De Grijze Jager: De ruïnes van Gorlan",
     "author": "John Flanagan",
     "isbn": null,
-    "cover_front": null,
+    "cover_front": "covers/de_grijze_jager_de_ruines_van_gorlan.jpg",
     "cover_back": null,
     "synopsis": "Will is klein voor zijn leeftijd, maar snel en niet dom. Zijn hele leven droomde hij ervan ridder te worden, net als zijn vader die hij nooit heeft gekend. Hij is diep teleurgesteld wanneer hij wordt afgewezen voor de krijgsschool op kasteel Doorn. In plaats daarvan wordt hij toegewezen aan Halt, de mysterieuze Grijze Jager wiens grootste talent lijkt te zijn om onopgemerkt door het koninkrijk te bewegen. Met enige tegenzin leert Will de geheime wapens van de Grijze Jagers: pijl en boog, een onopvallende camouflagecape en een eigenzinnige kleine pony. Maar hoewel Will vurig verlangt naar een zwaard en een fors strijdros, ontdekt hij wanneer hij met Halt op een geheime missie gaat om de moord op de koning te voorkomen, dat de wapens van de Grijze Jagers zo slecht nog niet zijn. Dit is het eerste deel van de internationaal succesvolle fantasyreeks De Grijze Jager van John Flanagan, waarvan in Nederland en België meer dan 1,5 miljoen exemplaren zijn verkocht.",
     "pages": null,
@@ -249,13 +266,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": null,
     "original_language": "",
-    "publisher": "Gottmer"
+    "publisher": "Gottmer",
+    "publisher_url": "https://www.penguinrandomhouse.com/books/296702/the-ruins-of-gorlan-by-john-flanagan/"
   },
   {
     "title": "Woodwalkers",
     "author": "Katja Brandis",
     "isbn": "9783401511481",
-    "cover_front": "https://covers.openlibrary.org/b/id/13156329-L.jpg",
+    "cover_front": "covers/woodwalkers.jpg",
     "cover_back": null,
     "synopsis": "Op het eerste gezicht lijkt Carag een gewone jongen, maar hij bezit een bijzonder geheim: hij kan van gedaante veranderen. Opgegroeid als poema in de bergen worstelt hij met het aanpassen aan de mensenwereld. Deze moeilijke overgang neemt een beslissende wending wanneer hij wordt ingeschreven op Clearwater High — een exclusief internaat voor wezens zoals hij, zogenaamde woodwalkers die half mens, half dier zijn. Op deze school ontmoet hij Holly, een eekhoorn-woodwalker, en Brandon, een bizon. De drie ontwikkelen snel een sterke vriendschap, wat cruciaal blijkt in hun gevaarlijke nieuwe omgeving. Dit is het eerste deel van een spannende en fascinerende zesdelige fantasiereeks over buitenbeentjes die half mens, half dier zijn, voor lezers vanaf 10 jaar.",
     "pages": 304,
@@ -263,13 +281,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2016,
     "original_language": "Duits",
-    "publisher": "Arena Verlag"
+    "publisher": "Arena Verlag",
+    "publisher_url": "https://www.clavisbooks.com/book/de-metamorfose"
   },
   {
     "title": "Harry Potter en de Steen der Wijzen",
     "author": "J.K. Rowling",
     "isbn": "9781907545030",
-    "cover_front": "https://covers.openlibrary.org/b/id/15155833-L.jpg",
+    "cover_front": "covers/harry_potter_en_de_steen_der_wijzen.jpg",
     "cover_back": null,
     "synopsis": "Harry Potter is een doodgewone, maar ongelukkige jongen die sinds de dood van zijn ouders bij zijn saaie en hardvochtige oom en tante in de bezemkast onder de trap woont. Op een dag krijgt hij een mysterieuze brief, en dan nog een, en nog een. De brieven veranderen Harry's hele leven: hij wordt gered door een wilde figuur op een vliegende motor en ontdekt wie zijn ouders werkelijk waren. Met een speciale trein die vertrekt van perron 9¾ belandt Harry op Zweinsteins Hogeschool voor Hekserij en Hocus Pocus, waar hij alles leert over bezemstelen, toverdranken en monsters. En uiteindelijk moet hij het opnemen tegen zijn aartsvijand Voldemort, een levensgevaarlijke tovenaar.",
     "pages": 302,
@@ -277,13 +296,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 1997,
     "original_language": "Engels",
-    "publisher": "De Harmonie"
+    "publisher": "De Harmonie",
+    "publisher_url": "https://www.deharmonie.nl/titel/harry-potter-en-de-steen-der-wijzen/"
   },
   {
     "title": "Geen beste dag voor voodoo",
     "author": "Jeff Strand",
     "isbn": "9781402267734",
-    "cover_front": "https://covers.openlibrary.org/b/isbn/9781402267734-L.jpg",
+    "cover_front": "covers/geen_beste_dag_voor_voodoo.jpg",
     "cover_back": null,
     "synopsis": "Tyler (16) krijgt een onterechte 1 voor een geschiedenistoets en wordt valselijk beschuldigd van spieken. Zijn beste vriend Adam geeft hem een voodoopop van de geschiedenisleraar, maar de pop blijkt veel sterker te werken dan verwacht. Wat volgt is totale chaos: paniek, een tweede voodoopop — dit keer van Tyler zelf —, een poging om de auto van zijn moeder terug te krijgen van gewapende criminelen, en een ontmoeting met een kannibalistisch gezin. Geen beste dag voor voodoo is slapstickhorror voor tieners, boordevol gruwelijke grappen. Geschikt vanaf 13 jaar.",
     "pages": 288,
@@ -291,13 +311,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2012,
     "original_language": "Engels",
-    "publisher": "Sourcebooks"
+    "publisher": "Sourcebooks",
+    "publisher_url": "https://www.sourcebooks.com/a-bad-day-for-voodoo.html"
   },
   {
     "title": "Dumplin'",
     "author": "Julie Murphy",
     "isbn": "9780062327208",
-    "cover_front": "https://covers.openlibrary.org/b/id/10158614-L.jpg",
+    "cover_front": "covers/dumplin.jpg",
     "cover_back": null,
     "synopsis": "Willowdean Dickson, een zelfverzekerde plussize tiener uit Texas, ziet haar vertrouwen wankelen na een zomerromance die onverwacht eindigt. Haar moeder, een voormalige schoonheidskoningin, legt haar voortdurend druk op over haar gewicht. Om haar zelfvertrouwen terug te winnen, besluit Willowdean zich in te schrijven voor de jaarlijkse Miss Clover City-schoonheidswedstrijd — precies de competitie die haar moeder organiseert. Ze haalt andere sociaal buitengesloten leerlingen over om mee te doen en transformeert de wedstrijd tot een statement over acceptatie en eigenwaarde. Een hartverwarmend verhaal over zelfliefde, vrouwelijke vriendschap en het trotseren van maatschappelijke schoonheidsnormen, met verwijzingen naar Dolly Parton.",
     "pages": 400,
@@ -305,13 +326,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Engels",
-    "publisher": "Balzer + Bray"
+    "publisher": "Balzer + Bray",
+    "publisher_url": "https://www.harpercollins.com/products/dumplin-julie-murphy"
   },
   {
     "title": "Supernerd of Topmodel",
     "author": "Tessa Schram",
     "isbn": null,
-    "cover_front": null,
+    "cover_front": "covers/supernerd_of_topmodel.jpg",
     "cover_back": null,
     "synopsis": "Vita Vlek is de nerd van de klas, houdt van leren en uitvindingen, is gek op lijstjes en staat bekend als #supernerd. Haar beste vriendin Emma schrijft haar stiekem in voor het televisieprogramma Top Model, waardoor Vita's veilige bubbel barst. Tot haar grote verbazing komt ze door de selectieronde en belandt ze al snel in het Modelhuis, waar ze opdrachten moet doen die ze nooit voor mogelijk had gehouden: lingerieshows, aandacht van leuke jongens en de strijd tegen aartsvijandin Barbara — terwijl haar vader denkt dat ze bij Emma huiswerk maakt. Vita moet kiezen: haar oude vertrouwde leven zonder glitter en glamour (maar ook zonder leugens), of een leven in de spotlights. Een meeslepend verhaal over een eerlijk meisje dat voor grote keuzes komt te staan.",
     "pages": 224,
@@ -319,13 +341,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Engels",
-    "publisher": "Scholastic"
+    "publisher": "Scholastic",
+    "publisher_url": "https://www.scholastic.com/book/supernerd-of-topmodel/"
   },
   {
     "title": "X-Scape",
     "author": "Michael Sels",
     "isbn": "9789463830478",
-    "cover_front": "https://covers.openlibrary.org/b/id/15131408-L.jpg",
+    "cover_front": "covers/x_scape.jpg",
     "cover_back": null,
     "synopsis": "Amber wordt wakker op een onbekende plek. Het is pikdonker en ze weet niet hoe ze hier terecht is gekomen of hoe ze moet ontsnappen. Om haar pols zit iets van metaal geklemd — een vreemde metalen band die ze niet kan verwijderen. Een vrouw, een man en twee jongens delen haar lot: dezelfde metalen polsband, dezelfde angstgevoelens, dezelfde dringende vragen. Toch kennen ze elkaar niet. Wie heeft deze vijf vreemden samengebracht? Net voor ze ontvoerd werd, vertelde Ambers beste vriendin Laura dat ze niets meer met haar te maken wilde hebben. Terwijl haar vier onbekende lotgenoten op zoek gaan naar een uitweg, zoekt Amber naar zichzelf.",
     "pages": 200,
@@ -333,13 +356,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2022,
     "original_language": "Nederlands",
-    "publisher": "Uitgeverij Manteau"
+    "publisher": "Uitgeverij Manteau",
+    "publisher_url": "https://www.pelckmansuitgevers.be/x-scape.html"
   },
   {
     "title": "Sunrise on the Reaping",
     "author": "Suzanne Collins",
     "isbn": "9788427249974",
-    "cover_front": "https://covers.openlibrary.org/b/id/15158117-L.jpg",
+    "cover_front": "covers/sunrise_on_the_reaping.jpg",
     "cover_back": null,
     "synopsis": "When the fiftieth annual Hunger Games begins, fear grips Panem's districts. This Quarter Quell doubles the tribute count, forcing twice as many young people into the arena. Haymitch Abernathy, a sixteen-year-old from District 12, is trying to navigate his final day before the reaping alongside his family and his love interest. When his name is called, his world shatters. He finds himself competing alongside three other District 12 tributes — including a close friend and a girl he initially dislikes — in what feels like an impossible situation designed for failure. Yet something within him sparks a desire to fight back, determined to make his resistance reverberate beyond the deadly arena itself.",
     "pages": 429,
@@ -347,13 +371,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2025,
     "original_language": "Engels",
-    "publisher": "Scholastic"
+    "publisher": "Scholastic",
+    "publisher_url": "https://www.scholastic.com/book/sunrise-on-the-reaping/"
   },
   {
     "title": "De Zeven Zussen",
     "author": "Lucinda Riley",
     "isbn": "9789401609371",
-    "cover_front": "https://covers.openlibrary.org/b/id/13343307-L.jpg",
+    "cover_front": "covers/de_zeven_zussen.jpg",
     "cover_back": null,
     "synopsis": "Na het plotselinge overlijden van hun vader verzamelen Maia en haar zussen zich in hun ouderlijk huis, een prachtig landhuis aan het Meer van Genève. De zussen werden als baby's geadopteerd door Pa Salt en ontvangen na zijn dood elk een brief met een mysterieuze verwijzing naar hun afkomst. Maia's verleden brengt haar naar Rio de Janeiro, waar ze met de weinige aanwijzingen die ze heeft probeert haar achtergrond te ontrafelen. Slaagt zij erin haar ware identiteit te achterhalen? De Zeven Zussen is het eerste deel van een zevendelige serie over liefde, verlies en de zoektocht naar wie je werkelijk bent.",
     "pages": 560,
@@ -361,13 +386,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2018,
     "original_language": "Engels",
-    "publisher": "Xander Uitgevers"
+    "publisher": "Xander Uitgevers",
+    "publisher_url": "https://www.xanderuitgevers.nl/boek/de-zeven-zussen/"
   },
   {
     "title": "Mythos",
     "author": "Stephen Fry",
     "isbn": "9780718188740",
-    "cover_front": "https://covers.openlibrary.org/b/id/8238803-L.jpg",
+    "cover_front": "covers/mythos.jpg",
     "cover_back": null,
     "synopsis": "Losbandigheid, lust en liefde, moord en doodslag, triomfen en tragedies: de Griekse mythen en sagen zijn wilder en woester dan het leven zelf. De klassieke verhalen hebben grote kunstenaars geïnspireerd, van Shakespeare en Michelangelo tot James Joyce en Walt Disney. Stephen Fry haalt deze verhalen op uit de oudheid en geeft ze hun welverdiende plek in onze moderne tijd. We worden verliefd op Zeus, we aanschouwen de geboorte van Athena, we zien hoe Kronos en Gaia wraak nemen op Ouranos, we huilen met koning Midas en we jagen met de even beeldschone als meedogenloze Artemis.",
     "pages": 441,
@@ -375,13 +401,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2017,
     "original_language": "Engels",
-    "publisher": "Penguin Books"
+    "publisher": "Penguin Books",
+    "publisher_url": "https://www.penguin.co.uk/books/292/292560/mythos/9780718188740.html"
   },
   {
     "title": "Helden",
     "author": "Stephen Fry",
     "isbn": "9781405940566",
-    "cover_front": "https://covers.openlibrary.org/b/id/8650334-L.jpg",
+    "cover_front": "covers/helden.jpg",
     "cover_back": null,
     "synopsis": "Het wervelende vervolg op de bestseller Mythos. In Mythos beschreef Stephen Fry de wereld van de goden, in Helden vertelt hij op sprankelende wijze de dramatische, geestige, tragische en tijdloze verhalen van de stervelingen uit de mythologie. Jason en zijn heroïsche queeste naar het Gulden Vlies aan boord van de Argo, Atalante die opgroeide bij de beren, Oidipous die het raadsel van de Sfinx weet op te lossen, en Herakles die zijn twaalf werken moet verrichten en het Labyrint van koning Minos moet doorkruisen waar de Minotauros op je wacht. Huiveringwekkend en meeslepend zijn de verhalen van de Griekse helden, die ons opnieuw laten zien waartoe wij mensen in staat zijn.",
     "pages": 440,
@@ -389,13 +416,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2018,
     "original_language": "Engels",
-    "publisher": "Penguin Books"
+    "publisher": "Penguin Books",
+    "publisher_url": "https://www.penguin.co.uk/books/309/309005/heroes/9781405940566.html"
   },
   {
     "title": "Surrounded by Narcissists",
     "author": "Thomas Erikson",
     "isbn": "9781473591523",
-    "cover_front": "https://covers.openlibrary.org/b/id/12411087-L.jpg",
+    "cover_front": "covers/surrounded_by_narcissists.jpg",
     "cover_back": null,
     "synopsis": "From the bestselling author of Surrounded by Idiots comes an essential guide to understanding and handling narcissists. Thomas Erikson helps readers recognize what drives narcissistic behavior and offers practical strategies for managing these individuals without exhausting yourself. Using his signature four-color behavioral model, Erikson shows how narcissists exploit different personality types and how to protect yourself. The book covers narcissists in all areas of life — whether it's your partner, a relative, or a colleague — and distinguishes between people displaying narcissistic tendencies and those with Narcissistic Personality Disorder. Beyond individual relationships, Erikson examines how narcissistic behaviors are becoming more prevalent in society, particularly through social media and contemporary culture.",
     "pages": 352,
@@ -403,13 +431,14 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2022,
     "original_language": "Zweeds",
-    "publisher": "St. Martin's Press"
+    "publisher": "St. Martin's Press",
+    "publisher_url": "https://us.macmillan.com/books/9781473591523/surrounded-by-narcissists"
   },
   {
     "title": "Dir-Yak Omnibus I",
     "author": "Luc Embrechts",
     "isbn": null,
-    "cover_front": null,
+    "cover_front": "covers/dir_yak_omnibus_i.jpg",
     "cover_back": null,
     "synopsis": "Bart (12) gaat samen met zijn vrienden Bolle en Caroline op zoek naar Wannes, die op mysterieuze wijze is verdwenen. Ze belanden in het ondergrondse fantasierijk van Dir-Yak, waar ze het moeten opnemen tegen allerlei vreemde wezens. In 'De wachter van de driehoek' reizen ze door ruig terrein, bevechten monsters en trotseren gevaren op weg naar de onneembare vesting van Wan-Dar, die de totale macht wil grijpen. In 'Onrust in Zar-Nak' worden Bart, Bolle en Caroline door het fantasiewezen Gnor gevraagd om zijn volk te helpen, wat al snel uitdraait op een nieuw gevaarlijk avontuur. Deze omnibus bundelt de eerste twee delen van de Dir-Yak-reeks, een spannende fantasyserie voor lezers vanaf 11 jaar.",
     "pages": 160,
@@ -417,6 +446,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Nederlands",
-    "publisher": "Oog & Blik"
+    "publisher": "Oog & Blik",
+    "publisher_url": "https://www.standaardboekhandel.be/p/dir-yak-omnibus-9789059246485"
   }
 ];
