@@ -17,7 +17,7 @@ const GRAAD_2_DATA = [
   {
     "title": "De laatste dochter",
     "author": "R.S.E. Gommer",
-    "isbn": null,
+    "isbn": "9789462666535",
     "cover_front": "covers/de_laatste_dochter.jpg",
     "cover_back": null,
     "synopsis": "Wat als je de laatste vrouw op aarde bent? Na een vernietigend virus ligt de wereld in puin. De Damesdood heeft in drie jaar alles veranderd. Mannen waren immuun, vrouwen niet. Het gevolg: alle vrouwen stierven. Alle vrouwen, behalve Alex. Samen met haar vader woont Alex in een dorp dat is afgeschermd van de wildernis. Elke dag vermomt zij zich als jongen, want wat zouden de dorpelingen doen als ze ontdekten dat ze een meisje is? Dan keert een verkenner terug met de boodschap dat er een vrouw is gevonden. Ben, de jongen op wie Alex stiekem verliefd is, gaat met een groep op zoek. Wanneer Alex niet langer veilig is in het dorp, reist ze hem achterna door de levensgevaarlijke wildernis. Zal Alex de vrouw vinden? Of blijft ze voor altijd de laatste dochter?",
@@ -26,7 +26,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2024,
     "original_language": "Nederlands",
-    "publisher": "Zomer & Keuning",
+    "publisher": "Novel Rebels",
     "publisher_url": "https://www.novelrebels.nl/boeken/de-laatste-dochter/"
   },
   {
@@ -41,7 +41,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2022,
     "original_language": "Nederlands",
-    "publisher": "Uitgeverij Manteau",
+    "publisher": "Pelckmans",
     "publisher_url": "https://www.pelckmansuitgevers.be/x-scape.html"
   },
   {
@@ -71,8 +71,8 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2006,
     "original_language": "Engels",
-    "publisher": "Uitgeverij Kluitman",
-    "publisher_url": "https://www.goodreads.com/book/show/6935607"
+    "publisher": "Van Goor",
+    "publisher_url": "https://www.standaardboekhandel.be/p/de-bliksemdief-9789000392292"
   },
   {
     "title": "The Cruel Prince",
@@ -176,7 +176,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2017,
     "original_language": "Engels",
-    "publisher": "HQN Books",
+    "publisher": "HarperCollins",
     "publisher_url": "https://harpercollins.co.uk/products/when-its-real-erin-watt"
   },
   {
@@ -192,7 +192,7 @@ const GRAAD_2_DATA = [
     "publication_date": 2010,
     "original_language": "Engels",
     "publisher": "Van Goor",
-    "publisher_url": "https://www.scholastic.com/book/the-hunger-games/"
+    "publisher_url": "https://www.bol.com/nl/nl/f/de-hongerspelen-de-hongerspelen/9200000015354759/"
   },
   {
     "title": "Schaduw van de Vos",
@@ -212,7 +212,7 @@ const GRAAD_2_DATA = [
   {
     "title": "De Kinderen van Orpheus",
     "author": "Petra Doom",
-    "isbn": null,
+    "isbn": "9789464208061",
     "cover_front": "covers/de_kinderen_van_orpheus.jpg",
     "cover_back": null,
     "synopsis": "Ooit daalde de mythische bard Orpheus af in de onderwereld om zijn geliefde Eurydice van de dood te redden. Vandaag vechten de erfgenamen van zijn gaven nog steeds tegen onderwereldwezens, die het voorzien hebben op musici met een gebroken hart. In Parijs klinkt overal muziek, zeker in het prestigieuze Conservatoire Eurydice. Maar hoort Ariane daar wel thuis? Ze twijfelt niet alleen aan haar talent maar ook aan haar verstand: nacht na nacht schrikt ze wakker van een melodie die er niet is. En waarom voelt ze de drang om in te grijpen wanneer een onbekende jongen overvallen wordt? Ze ontdekt een ontstellende waarheid: dat Liederen van Kracht de enige verdediging zijn tegen een oeroud kwaad. In de straten van Parijs waart een dreiging rond die alles zou kunnen veranderen.",
@@ -221,8 +221,8 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2019,
     "original_language": "Nederlands",
-    "publisher": "Uitgeverij Prometheus",
-    "publisher_url": "https://www.goodreads.com/series/361350-kinderen-van-orpheus"
+    "publisher": "Hamley Books",
+    "publisher_url": "https://www.hamleybooks.be/product/petra-doom-het-lied-van-ariane/"
   },
   {
     "title": "Zeis",
@@ -266,13 +266,13 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2021,
     "original_language": "Engels",
-    "publisher": "HQN Books",
+    "publisher": "G.P. Putnam's Sons",
     "publisher_url": "https://www.penguinrandomhouse.com/books/552377/royals-by-rachel-hawkins/"
   },
   {
     "title": "No Exit",
     "author": "Maren Stoffels",
-    "isbn": null,
+    "isbn": "9789025884666",
     "cover_front": "covers/no_exit.jpg",
     "cover_back": null,
     "synopsis": "Welkom bij No Exit. De plek voor jou, zodat anderen veilig zijn. Vesper stapt aan boord van een luxe cruiseschip. Ze denkt dat ze op vakantie gaat, maar niets is minder waar. Ze is opgegeven voor No Exit, een heropvoedprogramma voor pesters, ver weg van de buitenwereld. Al snel komt Vesper erachter dat No Exit geen grenzen kent. Ze is in levensgevaar, samen met alle anderen aan boord. En dan is er nog die ene medegevangene, die beweert dat ze onschuldig is. Vesper moet ontsnappen, maar hoe moet dat midden op open zee?",
@@ -332,7 +332,7 @@ const GRAAD_2_DATA = [
   {
     "title": "Gebroken",
     "author": "Mel Wallis de Vries",
-    "isbn": null,
+    "isbn": "9789026175787",
     "cover_front": "covers/gebroken.jpg",
     "cover_back": null,
     "synopsis": "Het aftellen is begonnen — het wordt een race tegen de klok om in leven te blijven. Zes jongeren vieren samen oud en nieuw: vijf van hen kennen elkaar, vier hebben met elkaar gezoend, drie blijven over op het einde, twee houden iets achter, één moordenaar loopt buiten rond. Niet iedereen haalt het. Fleur wordt uitgenodigd om oud en nieuw te vieren met twee andere meisjes en drie jongens van school. De groep is heel divers en al snel worden de eerste spanningen voelbaar. Maar dat is niet hun grootste probleem. Ergens buiten loopt een moordenaar rond die op ze jaagt. Een moordenaar die geen genade kent...",
@@ -341,7 +341,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Nederlands",
-    "publisher": "Uitgeverij Unieboek | Het Spectrum",
+    "publisher": "De Fontein",
     "publisher_url": "https://www.uitgeverijdefontein.nl/boek/gebroken/"
   },
   {
@@ -356,7 +356,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2024,
     "original_language": "Engels",
-    "publisher": "Simon & Schuster",
+    "publisher": "Henry Holt",
     "publisher_url": "https://us.macmillan.com/books/9781250910554/iwishyouwould"
   },
   {
@@ -401,13 +401,13 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2023,
     "original_language": "Engels",
-    "publisher": "Simon & Schuster",
+    "publisher": "Penguin",
     "publisher_url": "https://www.penguinrandomhouse.com/books/724161/thieves-gambit-by-kayvion-lewis/"
   },
   {
     "title": "De duistere profetie",
     "author": "Tahereh Mafi",
-    "isbn": null,
+    "isbn": "9789463494052",
     "cover_front": "covers/de_duistere_profetie.jpg",
     "cover_back": null,
     "synopsis": "Alizeh is een onopvallende bediende in Setar, de hoofdstad van Ardounia. Niemand mag weten wie ze echt is: een djinn. Haar volk is vrijwel volledig uitgeroeid, ook haar ouders zijn vermoord. Sindsdien is ze haar leven niet zeker en houdt ze haar bovennatuurlijke krachten verborgen. Maar dan maakt Alizeh een vergissing. Kamran is de kleinzoon van koning Zaahl en de kroonprins van Ardounia. Hij weet dat er een profetie is gedaan over het lot van zijn grootvader: een demonachtig wezen met ijs in diens bloed zal hem doden. Kamran is vastbesloten om het monster te vinden en te stoppen, voordat de profetie in vervulling kan gaan. Maar dan wordt hij verliefd op een bediende.",
@@ -416,7 +416,7 @@ const GRAAD_2_DATA = [
     "age_category": "",
     "publication_date": 2013,
     "original_language": "Engels",
-    "publisher": "HarperCollins",
+    "publisher": "Blossom Books",
     "publisher_url": "https://www.blossombooks.nl/product/alizeh/"
   },
   {

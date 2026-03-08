@@ -56,7 +56,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2016,
     "original_language": "Engels",
-    "publisher": "A.W. Bruna",
+    "publisher": "Meulenhoff Boekerij",
     "publisher_url": "https://www.boekerij.nl/producten/iene-miene-mutte-9789022576229"
   },
   {
@@ -86,8 +86,8 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 1991,
     "original_language": "Engels",
-    "publisher": "Random House",
-    "publisher_url": "https://www.goodreads.com/book/show/248584.Juniper"
+    "publisher": "Lemniscaat",
+    "publisher_url": "https://lemniscaat.nl/boeken/juniper"
   },
   {
     "title": "De heksen",
@@ -116,7 +116,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2023,
     "original_language": "Nederlands",
-    "publisher": "Zwijsen",
+    "publisher": "HarperCollins Holland",
     "publisher_url": "https://www.harpercollins.nl/9789402716290/het-pumpkin-spice-cafe-dream-harbor-1/"
   },
   {
@@ -131,7 +131,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2018,
     "original_language": "Engels",
-    "publisher": "Egmont",
+    "publisher": "HarperCollins",
     "publisher_url": "https://harpercollins.co.uk/products/the-it-girl-team-awkward-katy-birchall"
   },
   {
@@ -161,8 +161,8 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2005,
     "original_language": "Engels",
-    "publisher": "Uitgeverij Kluitman",
-    "publisher_url": "https://www.goodreads.com/book/show/6935607"
+    "publisher": "Van Goor",
+    "publisher_url": "https://www.standaardboekhandel.be/p/de-bliksemdief-9789000392292"
   },
   {
     "title": "De magische apotheek",
@@ -176,7 +176,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2020,
     "original_language": "Duits",
-    "publisher": "Arena Verlag",
+    "publisher": "Van Holkema & Warendorf",
     "publisher_url": "https://www.unieboekspectrum.nl/boek/9789000368020/De-magische-apotheek-3/"
   },
   {
@@ -191,7 +191,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2003,
     "original_language": "Frans",
-    "publisher": "L'école des loisirs",
+    "publisher": "Kluitman",
     "publisher_url": "https://www.kluitman.nl/boeken/de-trein-van-vier-over-twaalf/"
   },
   {
@@ -207,7 +207,7 @@ const GRAAD_1_DATA = [
     "publication_date": 2003,
     "original_language": "Engels",
     "publisher": "Baeckens Books",
-    "publisher_url": "https://warriorcats.com/books/into-the-wild"
+    "publisher_url": "https://baeckensbooks.com/producten/warrior-cats-de-wildernis-in-jubileumeditie/"
   },
   {
     "title": "1991",
@@ -221,7 +221,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2021,
     "original_language": "Nederlands",
-    "publisher": "Lannoo",
+    "publisher": "Pelckmans",
     "publisher_url": "https://www.pelckmansuitgevers.be/1991.html"
   },
   {
@@ -251,21 +251,21 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2011,
     "original_language": "Nederlands",
-    "publisher": "Querido",
+    "publisher": "Ploegsma",
     "publisher_url": "https://www.ploegsma.nl/boek/films-die-nergens-draaien/"
   },
   {
     "title": "De Grijze Jager: De ruïnes van Gorlan",
     "author": "John Flanagan",
-    "isbn": null,
+    "isbn": "9789025742843",
     "cover_front": "covers/de_grijze_jager_de_ruines_van_gorlan.jpg",
     "cover_back": null,
     "synopsis": "Will is klein voor zijn leeftijd, maar snel en niet dom. Zijn hele leven droomde hij ervan ridder te worden, net als zijn vader die hij nooit heeft gekend. Hij is diep teleurgesteld wanneer hij wordt afgewezen voor de krijgsschool op kasteel Doorn. In plaats daarvan wordt hij toegewezen aan Halt, de mysterieuze Grijze Jager wiens grootste talent lijkt te zijn om onopgemerkt door het koninkrijk te bewegen. Met enige tegenzin leert Will de geheime wapens van de Grijze Jagers: pijl en boog, een onopvallende camouflagecape en een eigenzinnige kleine pony. Maar hoewel Will vurig verlangt naar een zwaard en een fors strijdros, ontdekt hij wanneer hij met Halt op een geheime missie gaat om de moord op de koning te voorkomen, dat de wapens van de Grijze Jagers zo slecht nog niet zijn. Dit is het eerste deel van de internationaal succesvolle fantasyreeks De Grijze Jager van John Flanagan, waarvan in Nederland en België meer dan 1,5 miljoen exemplaren zijn verkocht.",
-    "pages": null,
+    "pages": 286,
     "genre": "Fictie",
     "age_category": "",
-    "publication_date": null,
-    "original_language": "",
+    "publication_date": 2011,
+    "original_language": "Engels",
     "publisher": "Gottmer",
     "publisher_url": "https://www.penguinrandomhouse.com/books/296702/the-ruins-of-gorlan-by-john-flanagan/"
   },
@@ -281,7 +281,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2016,
     "original_language": "Duits",
-    "publisher": "Arena Verlag",
+    "publisher": "Clavis",
     "publisher_url": "https://www.clavisbooks.com/book/de-metamorfose"
   },
   {
@@ -332,7 +332,7 @@ const GRAAD_1_DATA = [
   {
     "title": "Supernerd of Topmodel",
     "author": "Tessa Schram",
-    "isbn": null,
+    "isbn": "9789048850822",
     "cover_front": "covers/supernerd_of_topmodel.jpg",
     "cover_back": null,
     "synopsis": "Vita Vlek is de nerd van de klas, houdt van leren en uitvindingen, is gek op lijstjes en staat bekend als #supernerd. Haar beste vriendin Emma schrijft haar stiekem in voor het televisieprogramma Top Model, waardoor Vita's veilige bubbel barst. Tot haar grote verbazing komt ze door de selectieronde en belandt ze al snel in het Modelhuis, waar ze opdrachten moet doen die ze nooit voor mogelijk had gehouden: lingerieshows, aandacht van leuke jongens en de strijd tegen aartsvijandin Barbara — terwijl haar vader denkt dat ze bij Emma huiswerk maakt. Vita moet kiezen: haar oude vertrouwde leven zonder glitter en glamour (maar ook zonder leugens), of een leven in de spotlights. Een meeslepend verhaal over een eerlijk meisje dat voor grote keuzes komt te staan.",
@@ -341,7 +341,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Engels",
-    "publisher": "Scholastic",
+    "publisher": "Moon",
     "publisher_url": "https://www.scholastic.com/book/supernerd-of-topmodel/"
   },
   {
@@ -356,7 +356,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2022,
     "original_language": "Nederlands",
-    "publisher": "Uitgeverij Manteau",
+    "publisher": "Pelckmans",
     "publisher_url": "https://www.pelckmansuitgevers.be/x-scape.html"
   },
   {
@@ -437,7 +437,7 @@ const GRAAD_1_DATA = [
   {
     "title": "Dir-Yak Omnibus I",
     "author": "Luc Embrechts",
-    "isbn": null,
+    "isbn": "9789059244979",
     "cover_front": "covers/dir_yak_omnibus_i.jpg",
     "cover_back": null,
     "synopsis": "Bart (12) gaat samen met zijn vrienden Bolle en Caroline op zoek naar Wannes, die op mysterieuze wijze is verdwenen. Ze belanden in het ondergrondse fantasierijk van Dir-Yak, waar ze het moeten opnemen tegen allerlei vreemde wezens. In 'De wachter van de driehoek' reizen ze door ruig terrein, bevechten monsters en trotseren gevaren op weg naar de onneembare vesting van Wan-Dar, die de totale macht wil grijpen. In 'Onrust in Zar-Nak' worden Bart, Bolle en Caroline door het fantasiewezen Gnor gevraagd om zijn volk te helpen, wat al snel uitdraait op een nieuw gevaarlijk avontuur. Deze omnibus bundelt de eerste twee delen van de Dir-Yak-reeks, een spannende fantasyserie voor lezers vanaf 11 jaar.",
@@ -446,7 +446,7 @@ const GRAAD_1_DATA = [
     "age_category": "",
     "publication_date": 2015,
     "original_language": "Nederlands",
-    "publisher": "Oog & Blik",
+    "publisher": "Pardoes",
     "publisher_url": "https://www.standaardboekhandel.be/p/dir-yak-omnibus-9789059246485"
   }
 ];

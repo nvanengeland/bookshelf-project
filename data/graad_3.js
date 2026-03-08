@@ -2,17 +2,17 @@ const GRAAD_3_DATA = [
   {
     "title": "Kleine Gelukjes",
     "author": "Audrey Adelin",
-    "isbn": "",
+    "isbn": "9789000391431",
     "pages": 224,
     "publication_date": 2023,
     "original_language": "Nederlands",
     "genre": "Feel-good, Romantiek",
-    "publisher": "Xander Uitgevers",
+    "publisher": "Van Goor",
     "synopsis": "Als Ada gaat studeren aan de universiteit in Gent, wil ze dolgraag haar plek in de wereld vinden na een moeilijke periode op de middelbare school. Die zoektocht gaat misschien gepaard met vallen en opstaan, maar Ada ontdekt al snel dat er altijd onverwachte dingen op je pad kunnen komen. Zoals pasta-pesto-geluk met haar liefdevolle huisgenoten, een leesclub met gelijkgestemde studiegenootjes die al snel als familie voelen, en Mara met haar warme glimlach en liefde voor chocolade en sjaals. Een hartverwarmende en ontroerende Young Adult over jezelf en de wereld ontdekken – een boek over alle grote en kleine vormen van liefde, (zelfgekozen) familie en opgroeien.",
     "cover_front": "covers/kleine_gelukjes.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.goodreads.com/book/show/212902747-kleine-gelukjes"
+    "publisher_url": "https://www.standaardboekhandel.be/p/kleine-gelukjes-9789000391431"
   },
   {
     "title": "Schaduwliefde",
@@ -82,7 +82,7 @@ const GRAAD_3_DATA = [
     "publication_date": 2025,
     "original_language": "Engels",
     "genre": "Romantiek",
-    "publisher": "Berkley",
+    "publisher": "HarperCollins",
     "synopsis": "There's no such thing as a perfect guy, but Xavier Rush comes disastrously close. A gorgeous veterinarian giving Greek god vibes – all while cuddling a tiny kitten? Immediate yes. That is until Xavier opens his mouth and proves that even sculpted gods can say the absolute wrong thing. Like, really wrong. Of course, there's nothing Samantha loves more than proving an asshole wrong... unless, of course, he can admit he made a mistake. But after one incredible and seemingly endless date, Samantha is forced to admit the truth: that her family is in crisis and any kind of relationship would be impossible. Samantha begs Xavier to forget her. To remember their night together as a perfect moment, as crushing as that may be. Only no amount of distance or time is enough to forget what's between them. And the only thing better than one single perfect memory is to make a life – and even a love – worth remembering.",
     "cover_front": "covers/say_you_ll_remember_me.jpg",
     "cover_back": null,
@@ -277,12 +277,12 @@ const GRAAD_3_DATA = [
     "publication_date": 2019,
     "original_language": "Engels",
     "genre": "Thriller, Mystery, Young Adult",
-    "publisher": "Electric Monkey",
+    "publisher": "Farshore",
     "synopsis": "The case is closed. Five years ago, schoolgirl Andie Bell was murdered by Sal Singh. The police know he did it. Everyone in town knows he did it. But having grown up in the same small town that was consumed by the crime, Pippa Fitz-Amobi isn't so sure. When she chooses the case as the topic for her final year project, she starts to uncover secrets that someone in town desperately wants to stay hidden. And if the real killer is still out there, how far will they go to keep Pip from the truth...?",
     "cover_front": "covers/a_good_girl_s_guide_to_murder.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.penguinrandomhouse.com/books/609276/a-good-girls-guide-to-murder-by-holly-jackson/"
+    "publisher_url": "https://www.farshore.co.uk/products/a-good-girls-guide-to-murder-a-good-girls-guide-to-murder-book-1-holly-jackson-9781405293846/"
   },
   {
     "title": "Five Survive",
@@ -312,7 +312,7 @@ const GRAAD_3_DATA = [
     "cover_front": "covers/letters_to_the_lost.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.goodreads.com/book/show/30038855-letters-to-the-lost"
+    "publisher_url": "https://www.standaardboekhandel.be/p/letters-to-the-lost-9781408883525"
   },
   {
     "title": "Before We Were Strangers",
@@ -442,12 +442,12 @@ const GRAAD_3_DATA = [
     "publication_date": 2019,
     "original_language": "Engels",
     "genre": "Romantiek, Familiedrama",
-    "publisher": "Atria Books",
+    "publisher": "Zomer & Keuning",
     "synopsis": "Morgan Grant werd op haar zeventiende zwanger en trouwde met haar jeugdliefde Chris, waarbij ze haar eigen dromen opzij zette om hun dochter Clara groot te brengen. Morgan en de inmiddels zestienjarige Clara hebben moeite met hun tegengestelde persoonlijkheden. Hun fragiele gezinsevenwicht wordt verwoest wanneer Chris betrokken raakt bij een tragisch ongeluk met verdachte omstandigheden. De verwoestende nasleep dwingt moeder en dochter om hun leven apart weer op te bouwen. Terwijl ze door verdriet en verlies navigeren, vindt Morgan onverwachte troost bij een onwaarschijnlijk persoon, terwijl Clara zich aangetrokken voelt tot een jongen die ze niet mag zien. Met elke dag drijven geheimen, wrok en misverstanden hen verder uit elkaar.",
     "cover_front": "covers/regretting_you.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.goodreads.com/book/show/44582454-regretting-you"
+    "publisher_url": "https://www.zomerenkeuning.nl/boek/regretting-you-paperback/"
   },
   {
     "title": "November 9",
@@ -577,7 +577,7 @@ const GRAAD_3_DATA = [
     "publication_date": 2016,
     "original_language": "Engels",
     "genre": "Fantasy, Humor, Young Adult",
-    "publisher": "HarperTeen",
+    "publisher": "Uitgeverij Moon",
     "synopsis": "Engeland, 1553. Jane Grey had het geluk — of ongeluk — de kleindochter te zijn van de jongere zus van koning Hendrik VIII. Toen Hendriks enige levende zoon ernstig ziek werd, werd Jane gedwongen tot een haastig huwelijk om te voorkomen dat de kroon in verkeerde handen viel. Ze kreeg onverwacht de macht over het hele koninkrijk en werd koningin, maar zat slechts negen dagen op de troon voordat ze haar hoofd verloor. Maar dat tragische verhaal vertellen de auteurs niet — in plaats daarvan hebben ze enkele details veranderd en een vleugje magie toegevoegd. Het resultaat is een eigenzinnige YA-fantasy in de traditie van The Princess Bride, met een onwillige koning, een nog onwilligere koningin, een edel paard (haar man Gifford verandert elke dag bij zonsopgang in een kastanjebruin ros), en slechts een vluchtige gelijkenis met de echte geschiedenis.",
     "cover_front": "covers/lang_leve_jane.jpg",
     "cover_back": null,
@@ -587,12 +587,12 @@ const GRAAD_3_DATA = [
   {
     "title": "Lily",
     "author": "Tom de Cock",
-    "isbn": "",
+    "isbn": "9789463832717",
     "pages": 224,
     "publication_date": 2020,
     "original_language": "Nederlands",
     "genre": "Young Adult, Realisme",
-    "publisher": "Uitgeverij Vrijdag",
+    "publisher": "Pelckmans",
     "synopsis": "Het is vijftig graden buiten, de zeespiegel stijgt dagelijks en lockdowns volgen elkaar op door nieuwe virussen of schimmels. In deze dystopische toekomst is Lily veertien jaar oud, leeft ze in luxe en is ze een beroemde influencer. Wanneer ze op vakantie halsoverkop verliefd wordt op de goddelijke chagrijn Samuel, begint ze aan een wild avontuur om zijn hart te veroveren. Maar daarbij ontdekt ze de harde waarheid over het leven dat ze leidt — een ontdekkingsreis die niet alleen haar bestaan op zijn kop zet, maar dat van elke jongere op de planeet. Een meisje dat alles heeft, geeft haar prinsessenleventje op voor de liefde en krijgt er een verpletterende verantwoordelijkheid voor terug. Winnaar van de Prijs voor het Beste Jeugdboek 2022.",
     "cover_front": "covers/lily.jpg",
     "cover_back": null,
@@ -602,12 +602,12 @@ const GRAAD_3_DATA = [
   {
     "title": "Storm",
     "author": "Tom de Cock",
-    "isbn": "",
+    "isbn": "9789464015492",
     "pages": 256,
     "publication_date": 2021,
     "original_language": "Nederlands",
     "genre": "Young Adult, Realisme",
-    "publisher": "Uitgeverij Vrijdag",
+    "publisher": "Pelckmans",
     "synopsis": "Het is wereldnieuws in wat er nog overblijft van de wereld: Lily Rieder-Dubois leeft. Ooit prees ze als beroemde influencer haarproducten en frisdrank aan, maar vandaag verkondigt de vijftienjarige rebel met het ooglapje maar één boodschap: alles moet dringend veranderen. Lily heeft gezien wat de prijs is van luxe: mensenbloed, smeltwater van ijskappen, een dode natuur. En dan ontdekt ze dat het ergste nog moet komen. Met moed, humor en een bonte verzameling bondgenoten vecht Lily zich een weg uit het moeras van leugens, want de Storm komt eraan en iemand moet de wereld redden. Het tweede deel van de Lily-saga van Tom de Cock, over klimaatverandering, solidariteit en de moed om op te staan.",
     "cover_front": "covers/storm.jpg",
     "cover_back": null,
@@ -637,7 +637,7 @@ const GRAAD_3_DATA = [
     "publication_date": 2022,
     "original_language": "Nederlands",
     "genre": "Young Adult, Realisme",
-    "publisher": "Lannoo",
+    "publisher": "Kluitman",
     "synopsis": "Robin lijkt een normale jongen uit 4 havo. Op school gaat alles goed en hij brengt veel tijd door met zijn vriendinnetje Elin en zijn beste vriend Appie. Het lukt hem bijna om alles verborgen te houden, totdat zijn irritante mentor mevrouw Van Erven besluit zich ermee te bemoeien. Zowel Elin als Appie beginnen te vermoeden dat er iets mis is met Robin — hij liegt over waar hij is geweest en heeft steeds vaker agressieve uitbarstingen. Ze vragen zich af waarom ze nooit bij hem thuis worden uitgenodigd. Maar wanneer ze dichter bij de waarheid komen, zouden ze daar weleens spijt van kunnen krijgen. CTRL-A is een duistere thriller verteld vanuit vier perspectieven, waarvan er één tot het einde onbekend blijft, met een verrassende twist.",
     "cover_front": "covers/ctrl_a.jpg",
     "cover_back": null,
@@ -722,7 +722,7 @@ const GRAAD_3_DATA = [
   {
     "title": "Picking Daisies on a Sunday",
     "author": "Ella Miles",
-    "isbn": "",
+    "isbn": "9798396490833",
     "pages": 280,
     "publication_date": 2022,
     "original_language": "Engels",
@@ -752,7 +752,7 @@ const GRAAD_3_DATA = [
   {
     "title": "Onderstroom",
     "author": "Goedele Ghijsen",
-    "isbn": "",
+    "isbn": "9789002277832",
     "pages": 240,
     "publication_date": 2022,
     "original_language": "Nederlands",
@@ -772,7 +772,7 @@ const GRAAD_3_DATA = [
     "publication_date": 2011,
     "original_language": "Engels",
     "genre": "Historisch, Mythologie, LGBTQ+",
-    "publisher": "Bloomsbury",
+    "publisher": "Uitgeverij Orlando",
     "synopsis": "De Nederlandse vertaling van 'The Song of Achilles'. Het verhaal van de Trojaanse Oorlog verteld door de ogen van Patroclus, de geliefde van Achilles.",
     "cover_front": "covers/een_lied_voor_achilles.jpg",
     "cover_back": null,
@@ -837,7 +837,7 @@ const GRAAD_3_DATA = [
     "cover_front": "covers/het_grote_misschien.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.goodreads.com/book/show/13500961-het-grote-misschien"
+    "publisher_url": "https://www.bol.com/be/nl/f/het-grote-misschien/9200000029979331/"
   },
   {
     "title": "Aristoteles & Dante ontdekken de geheimen van het universum",
@@ -867,17 +867,17 @@ const GRAAD_3_DATA = [
     "cover_front": "covers/op_het_einde_gaan_ze_allebei_dood.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.simonandschuster.com/books/They-Both-Die-at-the-End/Adam-Silvera/9781471166204"
+    "publisher_url": "https://www.clavisbooks.com/nl-nl/op-het-einde-gaan-ze-allebei-dood.html"
   },
   {
     "title": "Shakespeare kent me beter dan mijn lief",
     "author": "Coen Simon",
-    "isbn": "",
+    "isbn": "9789493320208",
     "pages": 192,
     "publication_date": 2020,
     "original_language": "Nederlands",
     "genre": "Non-fictie, Literatuur",
-    "publisher": "De Bezige Bij",
+    "publisher": "Das Mag",
     "synopsis": "Een Nederlandstalig boek over liefde, literatuur en de vraag of fictieve personages ons soms beter begrijpen dan echte mensen.",
     "cover_front": "covers/shakespeare_kent_me_beter_dan_mijn_lief.jpg",
     "cover_back": null,
@@ -907,11 +907,11 @@ const GRAAD_3_DATA = [
     "publication_date": 1985,
     "original_language": "Duits",
     "genre": "Literaire fictie, Historisch, Thriller",
-    "publisher": "Diogenes Verlag",
+    "publisher": "Uitgeverij Prometheus",
     "synopsis": "Jean-Baptiste Grenouille wordt geboren met een bovenmenselijke reukzin in het 18e-eeuwse Parijs. Zijn obsessie met de perfecte geur leidt tot moord. Een literaire klassieker.",
     "cover_front": "covers/het_parfum.jpg",
     "cover_back": null,
     "age_category": "",
-    "publisher_url": "https://www.diogenes.ch/leser/titel/patrick-sueskind/das-parfum-9783257228007.html"
+    "publisher_url": "https://uitgeverijprometheus.nl/boeken/parfum-paperback/"
   }
 ];
