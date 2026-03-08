@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boekentips van leerlingen voor leerlingen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <h1>Boekentips</h1>
+            <p class="subtitle">van leerlingen, voor leerlingen</p>
+        </div>
+
+        <nav class="grade-tabs">
+            <button class="tab active" data-grade="graad_1">1ste Graad</button>
+            <button class="tab" data-grade="graad_2">2de Graad</button>
+            <button class="tab" data-grade="graad_3">3de Graad</button>
+        </nav>
+
+        <div class="filters">
+            <input type="text" id="search" placeholder="Zoek op titel of auteur..." autocomplete="off">
+            <select id="genre-filter">
+                <option value="">Alle genres</option>
+            </select>
+            <select id="language-filter">
+                <option value="">Alle talen</option>
+            </select>
+            <select id="pages-filter">
+                <option value="">Aantal pagina's</option>
+                <option value="0-199">&lt; 200</option>
+                <option value="200-300">200 – 300</option>
+                <option value="300-400">300 – 400</option>
+                <option value="401-99999">&gt; 400</option>
+            </select>
+            <button class="theme-toggle" id="theme-toggle" aria-label="Wissel tussen licht en donker thema" title="Thema wisselen">
+                &#9790;
+            </button>
+        </div>
+    </header>
+
+    <div class="bookshelf-container">
+        <div class="bookshelf" id="bookshelf">
+            <!-- Books will be rendered here by JS -->
+        </div>
+    </div>
+
+    <!-- Book detail modal -->
+    <div class="modal-overlay" id="modal-overlay">
+        <div class="modal" id="modal">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-content">
+                <div class="modal-cover">
+                    <img id="modal-cover-img" src="" alt="Cover">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-title"></h2>
+                    <p class="modal-author" id="modal-author"></p>
+                    <div class="modal-meta">
+                        <span class="meta-item" id="modal-pages"></span>
+                        <span class="meta-item" id="modal-year"></span>
+                        <span class="meta-item" id="modal-language"></span>
+                    </div>
+                    <div class="modal-genre" id="modal-genre"></div>
+                    <p class="modal-synopsis" id="modal-synopsis"></p>
+                    <p class="modal-publisher" id="modal-publisher"></p>
+                    <p class="modal-isbn" id="modal-isbn"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Samengesteld door leerlingen &mdash; voor leerlingen die op zoek zijn naar hun volgende favoriete boek.</p>
+    </footer>
+
+    <script src="data/graad_1.js"></script>
+    <script src="data/graad_2.js"></script>
+    <script src="data/graad_3.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
