@@ -165,6 +165,21 @@ const GRAAD_2_DATA = [
     "publisher_url": "https://harpercollins.co.uk/products/when-its-real-erin-watt"
   },
   {
+    "title": "Ugly Love",
+    "author": "Colleen Hover",
+    "isbn": "9789020552492",
+    "pages": 304,
+    "publication_date": 2024,
+    "original_language": "Engels",
+    "genre": "Young Adult, Romantiek",
+    "publisher": "Z&K",
+    "synopsis": "Wanneer verpleegkundige Tate haar buurman Miles tegen het lijf loopt, voelt ze zich onmiddellijk tot hem aangetrokken. En dat is wederzijds! Van liefde kan echter geen sprake zijn: hij wil geen relatie en zij heeft er geen tijd voor. 'Neighbors with benefits' daarentegen... Hun set-up heeft genoeg kans van slagen, zolang Tate zich maar aan twee regels weet te houden: vraag niet naar het verleden en verwacht geen toekomst samen. Maar hoe leuk is het om je aan de regels te houden?",
+    "cover_front": null,
+    "cover_back": null,
+    "age_category": "",
+    "publisher_url": null
+  },
+  {
     "title": "De Hongerspelen",
     "author": "Suzanne Collins",
     "isbn": "9789655522006",

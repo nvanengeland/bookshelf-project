@@ -448,5 +448,35 @@ const GRAAD_1_DATA = [
     "cover_back": null,
     "age_category": "",
     "publisher_url": "https://www.standaardboekhandel.be/p/dir-yak-omnibus-9789059246485"
+  },
+  {
+    "title": "De Hongerspelen",
+    "author": "Suzanne Collins",
+    "isbn": "9789655522006",
+    "pages": 424,
+    "publication_date": 2010,
+    "original_language": "Engels",
+    "genre": "Sciencefiction, Dystopie, Young Adult",
+    "publisher": "Van Goor",
+    "synopsis": "Katniss Everdeen woont in het twaalfde en armste district van Panem, het land dat ooit bekendstond als Noord-Amerika. Met haar moeder en haar zusje Prim leidt ze een armoedig leven, getekend door het keiharde regime van het welvarende Capitool. Jaarlijks worden de Hongerspelen uitgevaardigd: 24 door loting aangewezen tributen, een jongen en een meisje uit elk district, gaan een strijd op leven en dood met elkaar aan. Wanneer Prim wordt uitgeloot, weet Katniss dat dit een doodvonnis voor haar jonge zusje betekent en besluit ze haar plek in te nemen. Onder het oog van de hele bevolking van Panem, die de strijd als bron van vermaak volgt, begeeft ze zich in de arena. Gevangen in een meedogenloos web van bruut geweld, gemanipuleerde tv-beelden en corrupte politici komt Katniss voor de keus te staan: hoe ver zal ze gaan om te overleven?",
+    "cover_front": null,
+    "cover_back": null,
+    "age_category": "",
+    "publisher_url": null
+  },
+  {
+    "title": "Cinder en Ella",
+    "author": "Kelly Oram",
+    "isbn": "9789026152207",
+    "pages": 368,
+    "publication_date": 2020,
+    "original_language": "Duits",
+    "genre": "Young Adult, Romantiek",
+    "publisher": "De Fontein Jeugd",
+    "synopsis": "Na maanden revalideren mag Ella eindelijk naar huis. Niet naar haar moeder, zij kwam om bij het auto-ongeluk, maar naar haar vader die ze nauwelijks kent. Hij woont in Hollywood met zijn nieuwe gezin, maar Ella’s stiefzussen zitten niet op haar te wachten. Ella mist haar moeder en blogvriend Cinder. Sinds het ongeluk heeft ze niks van zich laten horen, maar stiekem droomt ze van hem. Wat ze niet weet is dat Cinder haar ook mist, én de hotste acteur van Hollywood is…",
+    "cover_front": null,
+    "cover_back": null,
+    "age_category": "",
+    "publisher_url": null
   }
 ];
