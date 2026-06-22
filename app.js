@@ -216,6 +216,8 @@
         const modalContent = document.getElementById('modal-content');
 
         modalTrigger = document.activeElement;
+        modal.classList.remove('is-swiping', 'is-swipe-dismissing');
+        modal.style.removeProperty('--swipe-offset');
 
         document.getElementById('modal-title').textContent = book.title;
         document.getElementById('modal-author').textContent = book.author;
@@ -279,6 +281,102 @@
             modalTrigger.focus({ preventScroll: true });
         }
         modalTrigger = null;
+    }
+
+    function initModalSwipe() {
+        const overlay = document.getElementById('modal-overlay');
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
+        const mobileModal = window.matchMedia('(max-width: 720px)');
+
+        let tracking = false;
+        let swiping = false;
+        let startX = 0;
+        let startY = 0;
+        let distance = 0;
+        let lastY = 0;
+        let lastTime = 0;
+        let velocity = 0;
+
+        function resetSwipe() {
+            tracking = false;
+            swiping = false;
+            distance = 0;
+            velocity = 0;
+            modal.classList.remove('is-swiping');
+            modal.style.removeProperty('--swipe-offset');
+        }
+
+        function finishSwipe() {
+            if (!tracking) return;
+            tracking = false;
+
+            if (!swiping) return;
+
+            const closeDistance = Math.min(120, modal.offsetHeight * 0.16);
+            const recentVelocity = performance.now() - lastTime < 100 ? velocity : 0;
+            const shouldClose = distance >= closeDistance || (distance > 44 && recentVelocity > 0.55);
+
+            modal.classList.remove('is-swiping');
+            modal.style.removeProperty('--swipe-offset');
+            swiping = false;
+
+            if (shouldClose) {
+                modal.classList.add('is-swipe-dismissing');
+                closeModal();
+                window.setTimeout(() => modal.classList.remove('is-swipe-dismissing'), 320);
+            }
+        }
+
+        modal.addEventListener('touchstart', (event) => {
+            if (!mobileModal.matches || !overlay.classList.contains('active') || event.touches.length !== 1 || modalContent.scrollTop > 1) return;
+
+            const touch = event.touches[0];
+            tracking = true;
+            swiping = false;
+            startX = touch.clientX;
+            startY = touch.clientY;
+            lastY = touch.clientY;
+            lastTime = performance.now();
+            distance = 0;
+            velocity = 0;
+        }, { passive: true });
+
+        modal.addEventListener('touchmove', (event) => {
+            if (!tracking || event.touches.length !== 1) return;
+
+            const touch = event.touches[0];
+            const deltaX = touch.clientX - startX;
+            const deltaY = touch.clientY - startY;
+
+            if (!swiping) {
+                if (Math.abs(deltaX) > 8 && Math.abs(deltaX) > Math.abs(deltaY)) {
+                    resetSwipe();
+                    return;
+                }
+                if (deltaY < -8 || modalContent.scrollTop > 1) {
+                    resetSwipe();
+                    return;
+                }
+                if (deltaY < 8) return;
+                swiping = true;
+                modal.classList.add('is-swiping');
+            }
+
+            event.preventDefault();
+            distance = Math.max(0, deltaY);
+
+            const now = performance.now();
+            const elapsed = now - lastTime;
+            if (elapsed > 0) velocity = (touch.clientY - lastY) / elapsed;
+            lastY = touch.clientY;
+            lastTime = now;
+
+            modal.style.setProperty('--swipe-offset', `${distance}px`);
+        }, { passive: false });
+
+        modal.addEventListener('touchend', finishSwipe, { passive: true });
+        modal.addEventListener('touchcancel', resetSwipe, { passive: true });
     }
 
     function trapModalFocus(e) {
@@ -346,6 +444,7 @@
         populateFilters();
         renderBookshelf();
         initTheme();
+        initModalSwipe();
 
         // Grade dropdown
         document.getElementById('grade-select').addEventListener('change', (e) => {
