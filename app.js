@@ -10,9 +10,11 @@
     let allData = [];
 
     function getBooksPerShelf() {
-        if (window.innerWidth <= 390) return 3;
-        if (window.innerWidth <= 720) return 4;
-        if (window.innerWidth <= 1040) return 5;
+        if (window.innerWidth <= 350) return 2;
+        if (window.innerWidth <= 500) return 3;
+        if (window.innerWidth <= 900) return 4;
+        if (window.innerWidth <= 1120) return 5;
+        if (window.innerWidth <= 1240) return 6;
         return 7;
     }
 
