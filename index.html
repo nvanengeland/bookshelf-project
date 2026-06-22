@@ -5,81 +5,126 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Boekentips van leerlingen voor leerlingen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,650&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+    <header class="site-header">
+        <div class="header-glass">
         <div class="header-left">
-            <h1>Boekentips</h1>
-            <p class="subtitle">van leerlingen, voor leerlingen</p>
+            <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+            <div>
+                <p class="brand-kicker">De leescollectie</p>
+                <h1>Boekentips<span>.</span></h1>
+                <p class="subtitle">van leerlingen, voor leerlingen</p>
+            </div>
         </div>
 
         <div class="filters">
-            <select id="grade-select">
+            <label class="filter-field filter-grade"><span class="sr-only">Graad</span><select id="grade-select">
+                <option value="all">Alle graden</option>
                 <option value="graad_1">1ste Graad</option>
                 <option value="graad_2">2de Graad</option>
                 <option value="graad_3">3de Graad</option>
-            </select>
-            <input type="text" id="search" placeholder="Zoek op titel of auteur..." autocomplete="off">
-            <select id="genre-filter">
+            </select></label>
+            <label class="filter-field search-field">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"></circle><path d="m16 16 4 4"></path></svg>
+                <span class="sr-only">Zoeken</span>
+                <input type="text" id="search" placeholder="Zoek je volgende boek" autocomplete="off">
+            </label>
+            <label class="filter-field"><span class="sr-only">Genre</span><select id="genre-filter">
                 <option value="">Alle genres</option>
-            </select>
-            <select id="language-filter">
-                <option value="">Alle talen</option>
-            </select>
-            <select id="pages-filter">
-                <option value="">Aantal pagina's</option>
+            </select></label>
+            <label class="filter-field compact-filter"><span class="sr-only">Oorspronkelijke taal</span><select id="language-filter">
+                <option value="">Taal</option>
+            </select></label>
+            <label class="filter-field compact-filter"><span class="sr-only">Aantal pagina's</span><select id="pages-filter">
+                <option value="">Lengte</option>
                 <option value="0-199">&lt; 200</option>
                 <option value="200-300">200 – 300</option>
                 <option value="300-400">300 – 400</option>
                 <option value="401-99999">&gt; 400</option>
-            </select>
-            <button class="theme-toggle" id="theme-toggle" aria-label="Wissel tussen licht en donker thema" title="Thema wisselen">
-                &#9790;
-            </button>
+            </select></label>
+            <button class="clear-filters" id="clear-filters" type="button">Wis filters</button>
+            <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Wissel tussen licht en donker thema" title="Thema wisselen"></button>
+        </div>
         </div>
     </header>
 
     <div class="bookshelf-container">
+        <div class="collection-intro">
+            <div>
+                <p class="section-kicker">Nu op de plank</p>
+                <h2>Vind een verhaal dat blijft hangen.</h2>
+            </div>
+            <div class="collection-count" aria-live="polite"><span id="results-count">0</span><span>boeken</span></div>
+        </div>
         <div class="bookshelf" id="bookshelf">
             <!-- Books will be rendered here by JS -->
         </div>
     </div>
 
-    <!-- Book detail modal -->
-    <div class="modal-overlay" id="modal-overlay">
-        <div class="modal" id="modal">
-            <button class="modal-close" id="modal-close">&times;</button>
-            <div class="modal-content">
-                <div class="modal-cover">
-                    <img id="modal-cover-img" src="" alt="Cover">
-                    <div class="modal-meta">
+    <!-- Book detail: dialog on desktop, native-feeling detail sheet on mobile -->
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+        <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="modal-handle" aria-hidden="true"></div>
+            <button class="modal-close" id="modal-close" type="button" aria-label="Boekdetail sluiten">
+                <svg aria-hidden="true" viewBox="0 0 24 24">
+                    <path d="M7 7l10 10M17 7 7 17"></path>
+                </svg>
+            </button>
+
+            <div class="modal-content" id="modal-content">
+                <div class="modal-hero">
+                    <img class="modal-ambient" id="modal-ambient-img" src="" alt="" aria-hidden="true">
+                    <div class="modal-cover-frame">
+                        <img id="modal-cover-img" src="" alt="">
+                        <div class="modal-cover-fallback" id="modal-cover-fallback" aria-hidden="true"></div>
+                    </div>
+                </div>
+
+                <div class="modal-info">
+                    <div class="modal-heading">
+                        <p class="modal-eyebrow">Boekdetail</p>
+                        <h2 id="modal-title"></h2>
+                        <p class="modal-author" id="modal-author"></p>
+                    </div>
+
+                    <div class="modal-meta" aria-label="Boekgegevens">
                         <span class="meta-item" id="modal-pages"></span>
                         <span class="meta-item" id="modal-year"></span>
                         <span class="meta-item" id="modal-language"></span>
                     </div>
-                    <div class="modal-genre" id="modal-genre"></div>
-                    <p class="modal-publisher" id="modal-publisher"></p>
-                    <p class="modal-isbn" id="modal-isbn"></p>
-                    <a class="modal-publisher-link" id="modal-publisher-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none">Bekijk bij uitgever</a>
-                </div>
-                <div class="modal-info">
-                    <h2 id="modal-title"></h2>
-                    <p class="modal-author" id="modal-author"></p>
-                    <p class="modal-synopsis" id="modal-synopsis"></p>
+                    <div class="modal-genre" id="modal-genre" aria-label="Genres"></div>
+
+                    <div class="modal-summary">
+                        <h3>Waar gaat het over?</h3>
+                        <p class="modal-synopsis" id="modal-synopsis"></p>
+                    </div>
+
+                    <div class="modal-publication">
+                        <div>
+                            <p class="modal-publisher" id="modal-publisher"></p>
+                            <p class="modal-isbn" id="modal-isbn"></p>
+                        </div>
+                        <a class="modal-publisher-link" id="modal-publisher-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none">
+                            <span>Bekijk bij uitgever</span>
+                            <svg aria-hidden="true" viewBox="0 0 24 24">
+                                <path d="M7 17 17 7M9 7h8v8"></path>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </div>
 
     <footer>
         <p>Samengesteld door leerlingen &mdash; voor leerlingen die op zoek zijn naar hun volgende favoriete boek.</p>
+        <a class="admin-link" href="admin.html">Beheer boekentips</a>
     </footer>
 
-    <script src="data/graad_1.js"></script>
-    <script src="data/graad_2.js"></script>
-    <script src="data/graad_3.js"></script>
+    <script src="data/books.js"></script>
     <script src="app.js"></script>
 </body>
 </html>

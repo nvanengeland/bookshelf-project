@@ -1,30 +1,51 @@
 // Bookshelf App
 (function () {
-    const BOOKS_PER_SHELF = 7;
     const PLACEHOLDER_COLORS = [
         '#2d4059', '#ea5455', '#f07b3f', '#3d5a80', '#5c4d7d',
         '#264653', '#2a9d8f', '#e76f51', '#457b9d', '#6d597a',
         '#355070', '#b56576', '#e56b6f', '#bc4749', '#386641',
     ];
 
-    let currentGrade = 'graad_1';
-    let allData = {};
+    let currentGrade = 'all';
+    let allData = [];
 
-    // Load data from global variables set by the JS data files
+    function getBooksPerShelf() {
+        if (window.innerWidth <= 390) return 3;
+        if (window.innerWidth <= 720) return 4;
+        if (window.innerWidth <= 1040) return 5;
+        return 7;
+    }
+
+    // Load the single shared collection set by data/books.js.
     function loadData() {
-        if (typeof GRAAD_1_DATA !== 'undefined') allData.graad_1 = GRAAD_1_DATA;
-        if (typeof GRAAD_2_DATA !== 'undefined') allData.graad_2 = GRAAD_2_DATA;
-        if (typeof GRAAD_3_DATA !== 'undefined') allData.graad_3 = GRAAD_3_DATA;
+        allData = typeof BOOKS_DATA === 'undefined' ? [] : BOOKS_DATA;
+    }
+
+    function getBooksForCurrentGrade() {
+        if (currentGrade === 'all') return allData;
+        return allData.filter(book => Array.isArray(book.grades) && book.grades.includes(currentGrade));
+    }
+
+    function groupBooksByAuthor(books) {
+        const groups = new Map();
+
+        books.forEach(book => {
+            const author = (book.author || '').trim().toLocaleLowerCase('nl');
+            if (!groups.has(author)) groups.set(author, []);
+            groups.get(author).push(book);
+        });
+
+        return [...groups.values()].flat();
     }
 
     function getFilteredBooks() {
-        const books = allData[currentGrade] || [];
+        const books = getBooksForCurrentGrade();
         const search = document.getElementById('search').value.toLowerCase().trim();
         const genreFilter = document.getElementById('genre-filter').value;
         const langFilter = document.getElementById('language-filter').value;
         const pagesFilter = document.getElementById('pages-filter').value;
 
-        return books.filter(book => {
+        const filteredBooks = books.filter(book => {
             if (search && !book.title.toLowerCase().includes(search) &&
                 !book.author.toLowerCase().includes(search)) {
                 return false;
@@ -42,10 +63,12 @@
             }
             return true;
         });
+
+        return groupBooksByAuthor(filteredBooks);
     }
 
     function populateFilters() {
-        const books = allData[currentGrade] || [];
+        const books = getBooksForCurrentGrade();
         const genres = new Set();
         const languages = new Set();
 
@@ -71,7 +94,7 @@
             genreSelect.innerHTML += `<option value="${g}">${g}</option>`;
         });
 
-        langSelect.innerHTML = '<option value="">Alle talen</option>';
+        langSelect.innerHTML = '<option value="">Taal</option>';
         [...languages].sort().forEach(l => {
             langSelect.innerHTML += `<option value="${l}">${l}</option>`;
         });
@@ -82,11 +105,12 @@
     }
 
     function createBookCard(book, index) {
-        const card = document.createElement('div');
+        const card = document.createElement('button');
+        card.type = 'button';
         card.className = 'book-card';
-        card.setAttribute('role', 'button');
-        card.setAttribute('tabindex', '0');
         card.setAttribute('aria-label', `${book.title} door ${book.author}`);
+        card.style.setProperty('--delay', `${Math.min(index % 7, 6) * 45}ms`);
+        card.style.setProperty('--tilt', `${[-1.2, .4, -.5, .8, -1, .3, -.3][index % 7]}deg`);
 
         const colorIdx = (index * 7 + index) % PLACEHOLDER_COLORS.length;
         const color = PLACEHOLDER_COLORS[colorIdx];
@@ -110,19 +134,16 @@
         }
 
         card.addEventListener('click', () => openModal(book));
-        card.addEventListener('keydown', (e) => {
-            if (e.key === 'Enter' || e.key === ' ') {
-                e.preventDefault();
-                openModal(book);
-            }
-        });
-
         return card;
     }
 
     function renderBookshelf() {
         const container = document.getElementById('bookshelf');
         const books = getFilteredBooks();
+        const booksPerShelf = getBooksPerShelf();
+
+        document.getElementById('results-count').textContent = books.length;
+        updateClearButton();
 
         container.innerHTML = '';
 
@@ -132,11 +153,12 @@
         }
 
         // Split books into shelf rows
-        for (let i = 0; i < books.length; i += BOOKS_PER_SHELF) {
-            const rowBooks = books.slice(i, i + BOOKS_PER_SHELF);
+        for (let i = 0; i < books.length; i += booksPerShelf) {
+            const rowBooks = books.slice(i, i + booksPerShelf);
 
             const row = document.createElement('div');
             row.className = 'shelf-row';
+            row.setAttribute('aria-label', `Boekenplank ${Math.floor(i / booksPerShelf) + 1}`);
 
             const booksContainer = document.createElement('div');
             booksContainer.className = 'shelf-books';
@@ -154,18 +176,61 @@
         }
     }
 
+    let modalTrigger = null;
+
+    function showCoverFallback(title) {
+        const coverImg = document.getElementById('modal-cover-img');
+        const ambientImg = document.getElementById('modal-ambient-img');
+        const fallback = document.getElementById('modal-cover-fallback');
+        coverImg.style.display = 'none';
+        ambientImg.style.display = 'none';
+        fallback.textContent = title;
+        fallback.style.display = 'flex';
+    }
+
+    function updateClearButton() {
+        const hasFilters = currentGrade !== 'all' ||
+            document.getElementById('search').value.trim() ||
+            document.getElementById('genre-filter').value ||
+            document.getElementById('language-filter').value ||
+            document.getElementById('pages-filter').value;
+        document.getElementById('clear-filters').classList.toggle('visible', Boolean(hasFilters));
+    }
+
+    function clearFilters() {
+        currentGrade = 'all';
+        document.getElementById('grade-select').value = 'all';
+        document.getElementById('search').value = '';
+        document.getElementById('genre-filter').value = '';
+        document.getElementById('language-filter').value = '';
+        document.getElementById('pages-filter').value = '';
+        populateFilters();
+        renderBookshelf();
+    }
+
     function openModal(book) {
         const overlay = document.getElementById('modal-overlay');
+        const modal = document.getElementById('modal');
+        const modalContent = document.getElementById('modal-content');
+
+        modalTrigger = document.activeElement;
 
         document.getElementById('modal-title').textContent = book.title;
         document.getElementById('modal-author').textContent = book.author;
 
         const coverImg = document.getElementById('modal-cover-img');
+        const ambientImg = document.getElementById('modal-ambient-img');
+        const coverFallback = document.getElementById('modal-cover-fallback');
+        coverImg.onerror = () => showCoverFallback(book.title);
         if (book.cover_front) {
             coverImg.src = book.cover_front;
+            coverImg.alt = `Boekomslag van ${book.title}`;
             coverImg.style.display = 'block';
+            ambientImg.src = book.cover_front;
+            ambientImg.style.display = 'block';
+            coverFallback.style.display = 'none';
         } else {
-            coverImg.style.display = 'none';
+            showCoverFallback(book.title);
         }
 
         document.getElementById('modal-pages').textContent = book.pages ? `${book.pages} pagina's` : '';
@@ -190,18 +255,47 @@
         const pubLink = document.getElementById('modal-publisher-link');
         if (book.publisher_url) {
             pubLink.href = book.publisher_url;
-            pubLink.style.display = 'inline-block';
+            pubLink.style.display = 'inline-flex';
         } else {
             pubLink.style.display = 'none';
         }
 
+        modalContent.scrollTop = 0;
         overlay.classList.add('active');
+        overlay.setAttribute('aria-hidden', 'false');
         document.body.style.overflow = 'hidden';
+        modal.focus({ preventScroll: true });
     }
 
     function closeModal() {
-        document.getElementById('modal-overlay').classList.remove('active');
+        const overlay = document.getElementById('modal-overlay');
+        if (!overlay.classList.contains('active')) return;
+        overlay.classList.remove('active');
+        overlay.setAttribute('aria-hidden', 'true');
         document.body.style.overflow = '';
+        if (modalTrigger && typeof modalTrigger.focus === 'function') {
+            modalTrigger.focus({ preventScroll: true });
+        }
+        modalTrigger = null;
+    }
+
+    function trapModalFocus(e) {
+        const overlay = document.getElementById('modal-overlay');
+        if (!overlay.classList.contains('active') || e.key !== 'Tab') return;
+
+        const focusable = [...overlay.querySelectorAll('button:not([disabled]), a[href]:not([style*="display: none"])')]
+            .filter(element => element.offsetParent !== null);
+        if (!focusable.length) return;
+
+        const first = focusable[0];
+        const last = focusable[focusable.length - 1];
+        if (e.shiftKey && document.activeElement === first) {
+            e.preventDefault();
+            last.focus();
+        } else if (!e.shiftKey && document.activeElement === last) {
+            e.preventDefault();
+            first.focus();
+        }
     }
 
     function escapeHtml(str) {
@@ -239,7 +333,9 @@
 
     function updateToggleIcon() {
         const toggle = document.getElementById('theme-toggle');
-        toggle.innerHTML = getEffectiveTheme() === 'dark' ? '&#9788;' : '&#9790;';
+        toggle.innerHTML = getEffectiveTheme() === 'dark'
+            ? '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg>'
+            : '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 15.2A8.4 8.4 0 0 1 8.8 4 8.5 8.5 0 1 0 20 15.2Z"></path></svg>';
     }
 
     // Event listeners
@@ -262,6 +358,20 @@
         document.getElementById('genre-filter').addEventListener('change', renderBookshelf);
         document.getElementById('language-filter').addEventListener('change', renderBookshelf);
         document.getElementById('pages-filter').addEventListener('change', renderBookshelf);
+        document.getElementById('clear-filters').addEventListener('click', clearFilters);
+
+        let resizeTimer;
+        let previousShelfSize = getBooksPerShelf();
+        window.addEventListener('resize', () => {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(() => {
+                const nextShelfSize = getBooksPerShelf();
+                if (nextShelfSize !== previousShelfSize) {
+                    previousShelfSize = nextShelfSize;
+                    renderBookshelf();
+                }
+            }, 140);
+        });
 
         // Modal close
         document.getElementById('modal-close').addEventListener('click', closeModal);
@@ -270,6 +380,7 @@
         });
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape') closeModal();
+            trapModalFocus(e);
         });
     });
 })();

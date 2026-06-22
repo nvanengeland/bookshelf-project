@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Modal preview</title>
+</head>
+<body>
+    <div class="modal-overlay active" id="modal-overlay" aria-hidden="false">
+        <section class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1">
+            <div class="modal-handle" aria-hidden="true"></div>
+            <button class="modal-close" id="modal-close" type="button" aria-label="Boekdetail sluiten">
+                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 7l10 10M17 7 7 17"></path></svg>
+            </button>
+            <div class="modal-content" id="modal-content">
+                <div class="modal-hero">
+                    <img class="modal-ambient" src="covers/binding_13.jpg" alt="" aria-hidden="true">
+                    <div class="modal-cover-frame">
+                        <img src="covers/binding_13.jpg" alt="Boekomslag van Binding 13">
+                        <div class="modal-cover-fallback" aria-hidden="true"></div>
+                    </div>
+                </div>
+                <div class="modal-info">
+                    <div class="modal-heading">
+                        <p class="modal-eyebrow">Boekdetail</p>
+                        <h2 id="modal-title">Binding 13</h2>
+                        <p class="modal-author">Chloe Walsh</p>
+                    </div>
+                    <div class="modal-meta" aria-label="Boekgegevens">
+                        <span class="meta-item">624 pagina's</span><span class="meta-item">2018</span><span class="meta-item">Engels</span>
+                    </div>
+                    <div class="modal-genre" aria-label="Genres"><span>Romantiek</span><span>Young Adult</span></div>
+                    <div class="modal-summary">
+                        <h3>Waar gaat het over?</h3>
+                        <p class="modal-synopsis">Johnny Kavanagh heeft alles onder controle. Op het rugbyveld is hij onverslaanbaar, maar wanneer Shannon op zijn school verschijnt, verandert alles. Een meeslepend verhaal over vriendschap, vertrouwen en durven kiezen voor jezelf.</p>
+                    </div>
+                    <div class="modal-publication">
+                        <div><p class="modal-publisher">Uitgever: De Fontein</p><p class="modal-isbn">ISBN: 9789026167890</p></div>
+                        <a class="modal-publisher-link" href="#" style="display:inline-flex"><span>Bekijk bij uitgever</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 17 17 7M9 7h8v8"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

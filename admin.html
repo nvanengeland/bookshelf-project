@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Beheer · Boekentips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="index.html" aria-label="Naar de boekenkast">
+            <span class="brand-mark">B</span>
+            <span><strong>Boekentips</strong><small>eenvoudig beheer</small></span>
+        </a>
+        <div class="topbar-actions">
+            <span class="save-state" id="save-state">Alles is bijgewerkt</span>
+            <a class="button button-quiet" href="index.html">Bekijk website</a>
+            <button class="button button-secondary" id="folder-button" type="button">Open projectmap</button>
+            <button class="button button-primary" id="save-button" type="button">Wijzigingen opslaan</button>
+        </div>
+    </header>
+
+    <div class="notice" id="notice">
+        <span aria-hidden="true">✦</span>
+        <p><strong>De website blijft volledig statisch.</strong> Open de projectmap om rechtstreeks in het databestand te bewaren. Zonder maptoegang wordt het bijgewerkte bestand gedownload.</p>
+        <button type="button" id="notice-close" aria-label="Melding sluiten">×</button>
+    </div>
+
+    <main class="workspace">
+        <aside class="library-panel">
+            <div class="library-heading">
+                <div>
+                    <p class="eyebrow">Collectie</p>
+                    <h1>Boeken</h1>
+                </div>
+                <button class="icon-button add-book" id="add-book" type="button" title="Nieuw boek" aria-label="Nieuw boek">+</button>
+            </div>
+
+            <div class="grade-tabs" role="tablist" aria-label="Graden">
+                <button class="grade-tab active" data-grade="graad_1" type="button">1ste <span id="count-graad_1">0</span></button>
+                <button class="grade-tab" data-grade="graad_2" type="button">2de <span id="count-graad_2">0</span></button>
+                <button class="grade-tab" data-grade="graad_3" type="button">3de <span id="count-graad_3">0</span></button>
+            </div>
+
+            <label class="search-box">
+                <span aria-hidden="true">⌕</span>
+                <input id="book-search" type="search" placeholder="Zoek titel of auteur" autocomplete="off">
+            </label>
+
+            <div class="book-list" id="book-list" aria-live="polite"></div>
+        </aside>
+
+        <section class="editor-panel">
+            <div class="empty-state" id="empty-state">
+                <div class="empty-icon">↖</div>
+                <h2>Kies een boek</h2>
+                <p>Selecteer links een boek of voeg een nieuwe titel toe.</p>
+            </div>
+
+            <form id="book-form" class="book-form" hidden>
+                <div class="editor-heading">
+                    <div>
+                        <p class="eyebrow">Boekgegevens</p>
+                        <h2 id="editor-title">Boek bewerken</h2>
+                    </div>
+                    <button class="button button-danger" id="delete-book" type="button">Verwijder boek</button>
+                </div>
+
+                <div class="form-layout">
+                    <div class="form-main">
+                        <section class="form-card">
+                            <h3>Basisinformatie</h3>
+                            <div class="field-grid">
+                                <label class="field field-wide">
+                                    <span>Titel <em>verplicht</em></span>
+                                    <input name="title" type="text" required>
+                                </label>
+                                <label class="field field-wide">
+                                    <span>Auteur <em>verplicht</em></span>
+                                    <input name="author" type="text" required>
+                                </label>
+                                <fieldset class="field field-wide grade-field">
+                                    <legend>Graden <em>minstens één</em></legend>
+                                    <div class="grade-options">
+                                        <label><input name="grades" type="checkbox" value="graad_1"><span>1ste graad</span></label>
+                                        <label><input name="grades" type="checkbox" value="graad_2"><span>2de graad</span></label>
+                                        <label><input name="grades" type="checkbox" value="graad_3"><span>3de graad</span></label>
+                                    </div>
+                                </fieldset>
+                                <label class="field">
+                                    <span>ISBN</span>
+                                    <input name="isbn" type="text" inputmode="numeric">
+                                </label>
+                                <label class="field">
+                                    <span>Aantal pagina's</span>
+                                    <input name="pages" type="number" min="1" step="1">
+                                </label>
+                                <label class="field">
+                                    <span>Publicatiejaar</span>
+                                    <input name="publication_date" type="number" min="1000" max="2100" step="1">
+                                </label>
+                                <label class="field">
+                                    <span>Oorspronkelijke taal</span>
+                                    <input name="original_language" type="text" list="languages">
+                                </label>
+                                <label class="field">
+                                    <span>Leeftijdscategorie</span>
+                                    <input name="age_category" type="text" placeholder="Bijv. 12+">
+                                </label>
+                                <label class="field field-wide">
+                                    <span>Genres <small>scheid met komma's</small></span>
+                                    <input name="genre" type="text" placeholder="Young Adult, Fantasy">
+                                </label>
+                            </div>
+                        </section>
+
+                        <section class="form-card">
+                            <h3>Beschrijving</h3>
+                            <label class="field">
+                                <span>Synopsis</span>
+                                <textarea name="synopsis" rows="9" placeholder="Een korte, aantrekkelijke samenvatting..."></textarea>
+                            </label>
+                            <p class="character-count"><span id="synopsis-count">0</span> tekens</p>
+                        </section>
+
+                        <section class="form-card">
+                            <h3>Uitgever</h3>
+                            <div class="field-grid">
+                                <label class="field">
+                                    <span>Uitgeverij</span>
+                                    <input name="publisher" type="text">
+                                </label>
+                                <label class="field">
+                                    <span>Link naar uitgever</span>
+                                    <input name="publisher_url" type="url" placeholder="https://…">
+                                </label>
+                            </div>
+                        </section>
+                    </div>
+
+                    <aside class="form-side">
+                        <section class="form-card cover-card">
+                            <h3>Boekomslag</h3>
+                            <div class="cover-preview" id="cover-preview">
+                                <img id="cover-image" alt="Voorbeeld van de boekomslag">
+                                <span id="cover-placeholder">Geen cover</span>
+                            </div>
+                            <label class="button button-secondary upload-button">
+                                Kies afbeelding
+                                <input id="cover-upload" type="file" accept="image/jpeg,image/png,image/webp" hidden>
+                            </label>
+                            <label class="field cover-path">
+                                <span>Bestandspad</span>
+                                <input name="cover_front" type="text" placeholder="covers/boek.jpg">
+                            </label>
+                            <p class="field-help">Een gekozen afbeelding wordt bij het opslaan in de map <code>covers</code> geplaatst.</p>
+                        </section>
+
+                        <section class="form-card publish-card">
+                            <h3>Publiceren</h3>
+                            <p id="storage-explanation">Open de lokale projectmap om wijzigingen rechtstreeks te bewaren.</p>
+                            <button class="button button-secondary button-full" id="side-folder-button" type="button">Projectmap openen</button>
+                            <button class="button button-primary button-full" id="side-save-button" type="submit">Wijzigingen opslaan</button>
+                            <p class="last-saved" id="last-saved"></p>
+                        </section>
+                    </aside>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <datalist id="languages">
+        <option value="Nederlands"></option>
+        <option value="Engels"></option>
+        <option value="Frans"></option>
+        <option value="Duits"></option>
+        <option value="Spaans"></option>
+    </datalist>
+
+    <script src="data/books.js"></script>
+    <script src="admin.js"></script>
+</body>
+</html>
